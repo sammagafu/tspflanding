@@ -1,6 +1,6 @@
 <template>
 <div class="container mx-auto">
-    <p class="text-center text-4xl font-medium">
+    <p class="text-center text-4xl font-bold text-blue-600">
         Meet our sponsors
     </p>
 </div>
