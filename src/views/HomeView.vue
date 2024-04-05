@@ -89,7 +89,7 @@ const time = ref(newYear - now);
       <div class="flex justify-center">
         <div class="relative mt-20">
           <a
-            href="#price"
+            href="https://patten.co.tz/app/forms/U2FsdGVkX19qF2WVmime2FQdmime2Fn2%2BdJQr8VxyG6phNUwuxeP0%3D/chatbot?extension=#101e51&access=660e636cec00625"
             class="text-xl font-medium py-3 px-9 bg-white text-primary rounded-lg transition-all duration-500 hover:shadow-white/10"
             >Register Now</a
           >
