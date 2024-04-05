@@ -216,158 +216,527 @@ const time = ref(newYear - now);
     <!-- Container End -->
   </section>
 
-  <section class="bg-white dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+  <section class="text-gray-700 body-font overflow-hidden border-t bg-black py-12">
+
+    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Would you love to sponsor us?</h2>
           <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Take the first step towards unlocking your potential - choose your package now and embark on a journey of growth and prosperity with TPSF</p>
       </div>
-      <div class="space-y-8 lg:grid lg:grid-cols-4 sm:gap-6 xl:gap-10 lg:space-y-0">
-          <!-- Pricing Card -->
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 class="mb-4 text-2xl font-semibold">Plutnumz</h3>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$50,000</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Individual configuration</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>No setup, or hidden fees</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Team size: <span class="font-semibold">1 developer</span></span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Premium support: <span class="font-semibold">6 months</span></span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Free updates: <span class="font-semibold">6 months</span></span>
-                  </li>
-              </ul>
-              <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-          </div>
-          <!-- Pricing Card -->
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 class="mb-4 text-2xl font-semibold">Gold</h3>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$30,000</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Individual configuration</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>No setup, or hidden fees</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Team size: <span class="font-semibold">10 developers</span></span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Premium support: <span class="font-semibold">24 months</span></span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Free updates: <span class="font-semibold">24 months</span></span>
-                  </li>
-              </ul>
-              <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-          </div>
-          <!-- Pricing Card -->
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 class="mb-4 text-2xl font-semibold">Silver </h3>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$30,000</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Individual configuration</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>No setup, or hidden fees</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Team size: <span class="font-semibold">100+ developers</span></span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Premium support: <span class="font-semibold">36 months</span></span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Free updates: <span class="font-semibold">36 months</span></span>
-                  </li>
-              </ul>
-              <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-          </div>
-
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 class="mb-4 text-2xl font-semibold">Bronze </h3>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$30,000</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Individual configuration</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>No setup, or hidden fees</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Team size: <span class="font-semibold">100+ developers</span></span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Premium support: <span class="font-semibold">36 months</span></span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Free updates: <span class="font-semibold">36 months</span></span>
-                  </li>
-              </ul>
-              <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-          </div>
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="lg:w-1/4 mt-48 hidden lg:block">
+      <div class="mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden text-sm">
+        <p class="bg-gray-400 text-gray-900 h-12 text-left px-4 flex items-center justify-start py-2">Right to be mentioned and placement of logo in all preromotion materials</p>
+        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Right to be mentioned in short video clips</p>
+        <p class="bg-gray-400 text-gray-900 h-12 text-left px-4 flex items-center justify-start">To be featured in the Private sector 25 commemorative Journal</p>
+        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Private Sector Marathon</p>
+        <p class="bg-gray-400 h-20 text-gray-900 text-left px-4 flex items-center justify-start">Brief introduction of the company & products and services in line with the theme.</p>
+        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Sitting at high table</p>
+        <p class="bg-gray-400 h-20 text-gray-900 text-left px-4 flex items-center justify-start">Logo placement on all marketing and Promotional materials for the event Banners, program etc.</p>
+        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Inside main hall branding as per guidelines which will be provided</p>
+        <p class="bg-gray-400 h-20 text-gray-900 text-left px-4 flex items-center justify-start">Full page advertisement in the conference programme inside cover</p>
+        <p class="text-gray-400 h-20 text-left px-4 flex items-center justify-start">Projector/LED screen advertisement of the sponsors products display throughout the event</p>
+        <p class="bg-gray-400 h-12 text-gray-900 text-left px-4 flex items-center justify-start">Distribute promotion materials to all delegates inside the venue</p>
+        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Right to distribute giveaways to dele ates inside the venue</p>
+        <p class="bg-gray-400 h-12 text-gray-900 text-left px-4 flex items-center justify-start">Logo placement in all romotion avenues</p>
+        <p class="text-gray-400 h-20 text-left px-4 flex items-center justify-start">Acknowledgement as sponsor in all key statements/ speeches / Press Conferences</p>
+        <p class="bg-gray-400 h-12 text-gray-900 text-left px-4 flex items-center justify-start">Mention in during the live coverage on radio and TV as well as the MC</p>
+        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Mention in all media attendances</p>
+        <p class="bg-gray-400 h-12 text-gray-900 text-left px-4 flex items-center justify-start">Right to logo placement on program</p>
+        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">A display area for your brand promotion at the main entrance</p>
+        <p class="bg-gray-400 text-gray-900 text-left px-4 flex items-center justify-start">Official Photo opportunity with the hi h- rofile uests</p>
+        <p class="text-gray-400 h-12 text-;eft px-4 flex items-center justify-start">Certificate of Appreciation b Guest of Honor</p>
       </div>
+    </div>
+    <div class="flex lg:w-3/4 w-full flex-wrap lg:border border-gray-300 rounded-lg">
+      <div class="lg:w-1/4 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+          <h3 class="tracking-widest text-white">PLATINUM</h3>
+          <h2 class="mr-2 text-5xl text-white font-extrabold">$ 50,000</h2>
+        </div>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class="h-12 bg-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class=" bg-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
+          All
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          Strategic location (as outlined in the look and feel document)
+        </p>
+        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p><p class="text-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p><p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+      </div>
+      <div class="lg:w-1/4 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-gray-300 relative">
+        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+          <h3 class="tracking-widest text-white">GOLD</h3>
+          <h2 class="mr-2 text-5xl text-white font-extrabold">$ 30,000</h2>
+        </div>
+        </div>
+        
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class="h-12 bg-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class=" bg-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
+          All
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          Strategic location (as outlined in the look and feel document)
+        </p>
+        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p><p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+      </div>
+      <div class="lg:w-1/4 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-gray-300 relative">
+        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+          <h3 class="tracking-widest text-white">SILVER</h3>
+          <h2 class="mr-2 text-5xl text-white font-extrabold">$ 10,000</h2>
+        </div>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class="h-12 bg-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class=" bg-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
+          All
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          Strategic location (as outlined in the look and feel document)
+        </p>
+        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p><p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+      </div>
+      <div class="lg:w-1/4 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+          <h3 class="tracking-widest text-white">BRONZE</h3>
+          <h2 class="mr-2 text-5xl text-white font-extrabold">$ 5,000</h2>
+        </div>
+        
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="h-12 bg-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">Half a page</p>
+        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
+        <p class=" bg-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
+          All
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          Strategic location (as outlined in the look and feel document)
+        </p>
+        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p><p class="text-gray-400 text-center h-20 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p><p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
+          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 </template>

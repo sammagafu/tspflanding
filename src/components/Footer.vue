@@ -1,18 +1,21 @@
 <template>
-<div class="container mx-auto">
+<div class="container mx-auto pt-16">
     <p class="text-center text-4xl font-bold text-black">
         2024 Main Sponsors
     </p>
 </div>
 
-<div class="container mx-auto sm:mx-4">
-  <div class="container mx-auto py-12">
+
+
+
+<div class="container mx-auto py-12">
+  <div class="py-16">
   <p class="text-4xl font-bold text-black">
     Platinum Sponsors
     </p>
 
     <swiper
-    :slides-per-view="4"
+    :slides-per-view="8"
     :space-between="50"
   >
     <swiper-slide><img src="@/assets/img/sponsors/hmh.png" alt=""></swiper-slide>
@@ -22,14 +25,12 @@
   </swiper>
 </div>
 
-
-<div class="container mx-auto py-12">
   <p class="text-4xl font-bold text-black">
     Silver Sponsors
     </p>
 
     <swiper
-    :slides-per-view="4"
+    :slides-per-view="8"
     :space-between="50"
   >
   <swiper-slide><img src="@/assets/img/sponsors/elswedy.png" alt="Elsewedy"></swiper-slide>
@@ -46,7 +47,7 @@
     </p>
 
     <swiper
-    :slides-per-view="4"
+    :slides-per-view="8"
     :space-between="50"
   >
   <swiper-slide><img src="@/assets/img/sponsors/nbc.png" alt="Elsewedy"></swiper-slide>
@@ -56,7 +57,6 @@
 
 
   </swiper>
-</div>
 </div>
 
 
