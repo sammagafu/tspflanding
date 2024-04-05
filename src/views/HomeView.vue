@@ -111,18 +111,18 @@ const time = ref(newYear - now);
 
         <div class="lg:me-6">
           <div class="my-auto">
-            <h2 class="text-3xl text-gray-800 font-bold mb-4 uppercase">
+            <h2 class="text-3xl text-gray-800 font-bold mb-4">
               Welcome to <br />
-              <span class="text-green-800">TANZANIA PRIVATE SECTOR FOUNDATION.</span>
+              <span class="text-blue-800">Tanzania Private Sector <br>Foundation.</span>
             </h2>
             <div class="flex flex-col mb-6">
-              <p class="tex-base text-slate-600">
+              <p class="tex-base text-slate-700">
                 Established in 1998 with just 33 members, TPSF has grown exponentially to
                 become the umbrella organization for over 400 direct members, including
                 Business Management Organizations and private corporations. Our members
                 collectively serve over 6 million businesses across Tanzania and Zanzibar.
               </p>
-              <p class="tex-base text-slate-600 mt-3">
+              <p class="text-slate-700 mt-3">
                 TPSF serves as the Government's strategic partner and the foremost
                 advocate for the private sector. We are committed to representing a
                 unified voice, advising on policy formulation and reviews, and advocating
@@ -153,10 +153,10 @@ const time = ref(newYear - now);
                   </svg>
                 </div>
                 <h6 class="text-lg font-bold mb-1">Where</h6>
-                <p class="text-base font-semibold text-gray-500">
+                <p class="text-base font-semibold text-gray-400 py-4">
                   Julius Nyerere International Convention Centre, Dar es Salaam, Tanzania
                 </p>
-                <p>&nbsp;</p>
+                <p class="text-base font-semibold text-gray-400 py-4">Super Dome, Dar es Salaam, <br> Tanzania</p>
               </div>
               <div class="">
                 <div
@@ -187,13 +187,13 @@ const time = ref(newYear - now);
                   </svg>
                 </div>
                 <h6 class="text-lg font-bold mb-1">When</h6>
-                <p class="text-base font-semibold text-gray-500">
+                <!-- <p class="text-base font-semibold text-gray-400">
                   21<sup>st</sup> April 2024 Private Sector Marathon
+                </p> -->
+                <p class="text-base font-semibold text-gray-400 py-4">
+                  23<sup>rd</sup> - 24<sup>th</sup> April 2024 <br> Conference
                 </p>
-                <p class="text-base font-semibold text-gray-500">
-                  23<sup>rd</sup> - 24<sup>th</sup> April 2024 Conference
-                </p>
-                <p class="text-base font-semibold text-gray-500">
+                <p class="text-base font-semibold text-gray-400 py-4">
                   25<sup>th</sup> AGM in the morning & Gala Dinner in the evening
                 </p>
               </div>
