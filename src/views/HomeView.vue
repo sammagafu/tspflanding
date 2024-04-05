@@ -13,16 +13,16 @@ const time = ref(newYear - now);
     class="py-64 relative overflow-hidden bg-fixed bg-no-repeat bg-center bg-cover"
     :style="'background-image: url(' + sliderImg + ');'"
   >
-    <div class="absolute bg-black/25 inset-0 w-full h-full"></div>
-    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="absolute bg-gradient-to-b from-slate-900/30 via-slate-900/70 to-slate-900 inset-0 w-full h-full"></div>
+    <!-- <div class="absolute inset-0 bg-black/30"></div> -->
     <!-- end backdrop -->
 
     <div class="container mx-auto">
       <div class="relative text-center">
-        <span class="text-white font-medium bg-red-900/60 py-[5px] px-4 rounded-md">
-          21 <sup>th</sup> - 25 <sup>th</sup> April 2025
+        <span class="text-white font-medium bg-red-600/60 py-[5px] px-4 rounded-md">
+          23 <sup>rd</sup> - 24 <sup>th</sup> April 2024
         </span>
-        <h1 class="lg:text-6xl text-4xl font-extrabold text-blue-400 my-8">
+        <h1 class="lg:text-6xl text-4xl font-extrabold text-blue-500 my-8">
           25th Anniversary of TPSF-Celebrating 25 Years of Pioneering Private Sector-led
           Growth.
         </h1>

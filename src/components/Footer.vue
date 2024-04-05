@@ -9,10 +9,10 @@
 
 
 <div class="container mx-auto py-12">
-  <div class="py-16">
+  <div class="py-12">
   <p class="text-4xl font-bold text-black">
     Platinum Sponsors
-    </p>
+  </p>
 
     <swiper
     :slides-per-view="8"
