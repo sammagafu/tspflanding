@@ -200,7 +200,7 @@ const time = ref(newYear - now);
             </div>
 
             <a
-              href="#"
+              href="https://tpsftz.org/"
               class="group relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none text-primary hover:text-primary duration-500"
               ><span
                 class="absolute h-px w-7/12 group-hover:w-full transition-all duration-500 rounded bg-primary/80 -bottom-0"
