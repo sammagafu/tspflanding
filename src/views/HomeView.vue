@@ -10,7 +10,7 @@ const time = ref(newYear - now);
 <template>
   <section
     id="home"
-    class="py-64 relative overflow-hidden bg-fixed bg-no-repeat bg-center bg-cover"
+    class="py-14 lg:py-36 relative overflow-hidden bg-fixed bg-no-repeat bg-center bg-cover"
     :style="'background-image: url(' + sliderImg + ');'"
   >
     <div class="absolute bg-gradient-to-b from-slate-900/30 via-slate-900/70 to-slate-900 inset-0 w-full h-full"></div>
@@ -18,17 +18,17 @@ const time = ref(newYear - now);
     <!-- end backdrop -->
 
     <div class="container mx-auto">
-      <div class="relative text-center">
-        <span class="text-white font-medium bg-red-600/60 py-[5px] px-4 rounded-md">
+      <div class="relative text-center mx-4">
+        <span class="text-white font-medium bg-blue-800 py-[5px] px-4 rounded-md">
           23 <sup>rd</sup> - 24 <sup>th</sup> April 2024
         </span>
-        <h1 class="lg:text-6xl text-4xl font-extrabold text-blue-500 my-8">
+        <h1 class="lg:text-6xl text-3xl font-extrabold text-white my-8">
           25th Anniversary of TPSF-Celebrating 25 Years of Pioneering Private Sector-led
           Growth.
         </h1>
         <div class="flex justify-center">
           <div class="max-w-3xl text-center">
-            <p class="font-semibold text-white">
+            <p class="font-medium text-xl text-white">
               TPSW 2024 encapsulates the enduring commitment of TPSF and the wider private
               sector to steer economic development through innovation, entrepreneurship,
               and sustainable practices. The theme echoes the narrative of resilience,
@@ -110,19 +110,19 @@ const time = ref(newYear - now);
         <!-- end grid-col -->
 
         <div class="lg:me-6">
-          <div class="my-auto">
+          <div class="mx-3">
             <h2 class="text-3xl text-gray-800 font-bold mb-4">
               Welcome to <br />
               <span class="text-blue-800">Tanzania Private Sector <br>Foundation.</span>
             </h2>
             <div class="flex flex-col mb-6">
-              <p class="tex-base text-slate-700">
+              <p class="font-medium text-xl text-slate-700">
                 Established in 1998 with just 33 members, TPSF has grown exponentially to
                 become the umbrella organization for over 400 direct members, including
                 Business Management Organizations and private corporations. Our members
                 collectively serve over 6 million businesses across Tanzania and Zanzibar.
               </p>
-              <p class="text-slate-700 mt-3">
+              <p class="font-medium text-xl text-slate-700 mt-3">
                 TPSF serves as the Government's strategic partner and the foremost
                 advocate for the private sector. We are committed to representing a
                 unified voice, advising on policy formulation and reviews, and advocating
@@ -130,7 +130,7 @@ const time = ref(newYear - now);
               </p>
             </div>
 
-            <div class="grid grid-cols-2 items-center gap-6 mb-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 mb-10">
               <div class="">
                 <div
                   class="h-10 w-10 inline-flex justify-center items-center bg-primary/20 text-primary text-2xl/none rounded-md mb-4"
@@ -152,11 +152,11 @@ const time = ref(newYear - now);
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                 </div>
-                <h6 class="text-lg font-bold mb-1">Where</h6>
-                <p class="text-base font-semibold text-gray-400 py-4">
+                <h6 class="text-2xl font-bold mb-1">Where</h6>
+                <p class="text-base font-semibold text-slate-700 py-4">
                   Julius Nyerere International Convention Centre, Dar es Salaam, Tanzania
                 </p>
-                <p class="text-base font-semibold text-gray-400 py-4">Super Dome, Dar es Salaam, <br> Tanzania</p>
+                <p class="text-base font-semibold text-slate-700 py-4">Super Dome, Dar es Salaam, <br> Tanzania</p>
               </div>
               <div class="">
                 <div
@@ -190,11 +190,11 @@ const time = ref(newYear - now);
                 <!-- <p class="text-base font-semibold text-gray-400">
                   21<sup>st</sup> April 2024 Private Sector Marathon
                 </p> -->
-                <p class="text-base font-semibold text-gray-400 py-4">
+                <p class="text-base font-semibold text-slate-700 py-4">
                   23<sup>rd</sup> - 24<sup>th</sup> April 2024 <br> Conference
                 </p>
-                <p class="text-base font-semibold text-gray-400 py-4">
-                  25<sup>th</sup> AGM in the morning & Gala Dinner in the evening
+                <p class="text-base font-semibold text-slate-700 py-4">
+                  24<sup>th</sup> AGM in the morning & Gala Dinner in the evening
                 </p>
               </div>
             </div>
@@ -741,302 +741,5 @@ const time = ref(newYear - now);
 
   <!-- add contact for sponsoprs 
 </section> -->
-<section class="bg-white dark:bg-gray-900 antialiased" id="schedule">
-        <div class="max-w-screen-xl px-4 mx-auto lg:px-6 sm:py-16 lg:py-24">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
-                    Schedule
-                </h2>
-            </div>
 
-            <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
-                        <div class="">
-                    <h2 class="text-2xl py-6 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Original Program Structure and Themes: Day 1</h2>
-                </div>
-                <div class="-my-4 divide-y divide-gray-200 ">
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            07:00- 8:30
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Guest Arrival and Entertainment
-                        </h3>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            08:30-09:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Guest Sitting
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:15-09:25
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Guest of honor visiting the booth
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:25-09:30
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Opening Ceremony- Tanzania and EAC anthems
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:30-09:40
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">CEO Remarks- TPSF
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:40-09:45
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Video Documentary- TPSF Journey
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:45- 09:55
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Remarks- Main Sponsor
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:55-10:40
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Plenary Discussion: Past 25 years
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            10:40-10:50
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">TPSF Chair remarks
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            10:50- 11:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Ministerial Remarks- Hon Kitila and Hon Soraga
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:00-11:20
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Guest of Honor Speech- Hon Dr Samia Suluhu Hassan
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:00- 11:25
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Group Photo
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:25-11:30
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Guest of Honor Departs
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:30-12:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Health Break
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            12:00-13:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">lenary 2: The Next 25 years
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            13:00-1400
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lunch Break
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            1400-1600
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Break Out Sessions:
-                            <ul class="text-baseline text-sm list-disc">
-                                <li>Agriculture</li>
-                                <li>Sustainable Energy</li>
-                                <li>Regional intergration</li>
-                                <li>Digital transformation</li>
-                            </ul>
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            16:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Wrap up the day
-                        </h3>
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
-                        <div class="">
-                    <h2 class="text-2xl py-6 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Original Program Structure and Themes:
-Day 2</h2>
-                </div>
-                <div class="-my-4 divide-y divide-gray-200 ">
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            07:00- 8:30
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Guest Arrival and Entertainment
-                        </h3>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            08:30-09:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Guest Sitting
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:15-09:25
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Guest of honor visiting the booth
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:25-09:30
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Opening Ceremony- Tanzania and EAC anthems
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:30-09:40
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">CEO Remarks- TPSF
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:40-09:45
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Video Documentary- TPSF Journey
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:45- 09:55
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Remarks- Main Sponsor
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            09:55-10:40
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Plenary Discussion: Past 25 years
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            10:40-10:50
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">TPSF Chair remarks
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            10:50- 11:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Ministerial Remarks- Hon Kitila and Hon Soraga
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:00-11:20
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Guest of Honor Speech- Hon Dr Samia Suluhu Hassan
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:00- 11:25
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Group Photo
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:25-11:30
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Guest of Honor Departs
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:30-12:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Health Break
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            12:00-13:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">lenary 2: The Next 25 years
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            13:00-1400
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lunch Break
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            1400-1600
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Break Out Sessions:
-                            <ul class="text-baseline text-sm list-disc">
-                                <li>Agriculture</li>
-                                <li>Sustainable Energy</li>
-                                <li>Regional intergration</li>
-                                <li>Digital transformation</li>
-                            </ul>
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            16:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Wrap up the day
-                        </h3>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
 </template>
