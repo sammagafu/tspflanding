@@ -18,12 +18,7 @@ const router = createRouter({
       path: '/sponsors',
       name: 'sponsors',
       component: () => import('@/views/Sponsor.vue')
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('@/views/Contact.vue')
-    },
+    }
   ]
 })
 
