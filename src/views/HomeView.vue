@@ -140,7 +140,7 @@ const time = ref(newYear - now);
               </div>
               <div class="">
                 <h6 class="text-2xl font-bold mb-1">24<sup>th</sup> AGM in the morning & Gala Dinner in the evening</h6>
-                   <p class="text-base font-semibold text-slate-700 py-4">Super Dome, Dar es Salaam, <br> Tanzania</p>
+                   <p class="text-base font-semibold text-slate-700 py-4">The Super Dome, Dar es Salaam, <br> Tanzania</p>
               </div>
             </div>
 
