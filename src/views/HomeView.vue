@@ -132,70 +132,15 @@ const time = ref(newYear - now);
 
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 mb-10">
               <div class="">
-                <div
-                  class="h-10 w-10 inline-flex justify-center items-center bg-primary/20 text-primary text-2xl/none rounded-md mb-4"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    data-lucide="map-pin"
-                    class="lucide lucide-map-pin h-6 w-6"
-                  >
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <h6 class="text-2xl font-bold mb-1">Where</h6>
+                <h6 class="text-2xl font-bold mb-1">23<sup>rd</sup> - 24<sup>th</sup> April 2024 <br> Conference</h6>
                 <p class="text-base font-semibold text-slate-700 py-4">
                   Julius Nyerere International Convention Centre, Dar es Salaam, Tanzania
                 </p>
-                <p class="text-base font-semibold text-slate-700 py-4">Super Dome, Dar es Salaam, <br> Tanzania</p>
+             
               </div>
               <div class="">
-                <div
-                  class="h-10 w-10 inline-flex justify-center items-center bg-primary/20 text-primary text-2xl/none rounded-md mb-4"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    data-lucide="circle-dot-dashed"
-                    class="lucide lucide-circle-dot-dashed h-6 w-6"
-                  >
-                    <path d="M10.1 2.18a9.93 9.93 0 0 1 3.8 0"></path>
-                    <path d="M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7"></path>
-                    <path d="M21.82 10.1a9.93 9.93 0 0 1 0 3.8"></path>
-                    <path d="M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69"></path>
-                    <path d="M13.9 21.82a9.94 9.94 0 0 1-3.8 0"></path>
-                    <path d="M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7"></path>
-                    <path d="M2.18 13.9a9.93 9.93 0 0 1 0-3.8"></path>
-                    <path d="M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69"></path>
-                    <circle cx="12" cy="12" r="1"></circle>
-                  </svg>
-                </div>
-                <h6 class="text-lg font-bold mb-1">When</h6>
-                <!-- <p class="text-base font-semibold text-gray-400">
-                  21<sup>st</sup> April 2024 Private Sector Marathon
-                </p> -->
-                <p class="text-base font-semibold text-slate-700 py-4">
-                  23<sup>rd</sup> - 24<sup>th</sup> April 2024 <br> Conference
-                </p>
-                <p class="text-base font-semibold text-slate-700 py-4">
-                  24<sup>th</sup> AGM in the morning & Gala Dinner in the evening
-                </p>
+                <h6 class="text-2xl font-bold mb-1">24<sup>th</sup> AGM in the morning & Gala Dinner in the evening</h6>
+                   <p class="text-base font-semibold text-slate-700 py-4">Super Dome, Dar es Salaam, <br> Tanzania</p>
               </div>
             </div>
 

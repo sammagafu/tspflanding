@@ -1,7 +1,7 @@
 <template>
 <div class="container mx-auto pt-16">
     <p class="text-center text-4xl font-bold text-black">
-        2024 Main Sponsors
+        2024 Sponsors
     </p>
 </div>
 
@@ -17,6 +17,30 @@
     <swiper
     :slides-per-view="8"
     :space-between="50"
+    :centeredSlides="true"
+    :modules="modules"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
+    :breakpoints="{
+      '@0.00': {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      '@0.75': {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      '@1.00': {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      '@1.50': {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+    }"
   >
     <swiper-slide><img src="@/assets/img/sponsors/hmh.png" alt=""></swiper-slide>
     <swiper-slide><img src="@/assets/img/sponsors/carmel.png" alt=""></swiper-slide>
@@ -32,6 +56,30 @@
     <swiper
     :slides-per-view="8"
     :space-between="50"
+    :modules="modules"
+    :centeredSlides="true"
+    :autoplay="{
+      delay: 3500,
+      disableOnInteraction: false,
+    }"
+    :breakpoints="{
+      '@0.00': {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      '@0.75': {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      '@1.00': {
+        slidesPerView: 6,
+        spaceBetween: 40,
+      },
+      '@1.50': {
+        slidesPerView: 8,
+        spaceBetween: 50,
+      },
+    }"
   >
   <swiper-slide><img src="@/assets/img/sponsors/elswedy.png" alt="Elsewedy"></swiper-slide>
     <swiper-slide><img src="@/assets/img/sponsors/ttc.png" alt=""></swiper-slide>
@@ -48,7 +96,31 @@
 
     <swiper
     :slides-per-view="8"
+    :centeredSlides="true"
+    :modules="modules"
     :space-between="50"
+    :autoplay="{
+      delay: 3000,
+      disableOnInteraction: false,
+    }"
+    :breakpoints="{
+      '@0.00': {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      '@0.75': {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      '@1.00': {
+        slidesPerView: 6,
+        spaceBetween: 40,
+      },
+      '@1.50': {
+        slidesPerView: 8,
+        spaceBetween: 50,
+      },
+    }"
   >
   <swiper-slide><img src="@/assets/img/sponsors/nbc.png" alt="Elsewedy"></swiper-slide>
     <swiper-slide><img src="@/assets/img/sponsors/nmb.png" alt=""></swiper-slide>
@@ -71,6 +143,9 @@
 
 <script setup>
   import { Swiper, SwiperSlide } from 'swiper/vue';
+  import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+  import 'swiper/css/navigation';
   import 'swiper/css';
 
   const onSwiper = (swiper) => {
@@ -80,4 +155,6 @@
 const onSlideChange = () => {
   console.log('slide change');
 };
+
+const modules = [Navigation,Autoplay];
 </script>
