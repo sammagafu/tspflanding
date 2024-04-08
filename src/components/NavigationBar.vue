@@ -3,11 +3,13 @@
     class="bg-white dark:bg-gray-900 bg-center w-full z-20 top-0 start-0 py- border-b border-gray-200 dark:border-gray-600">
 
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <div class="flex md:order-2 sm:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <a href="https://patten.co.tz/app/forms/U2FsdGVkX19qF2WVmime2FQdmime2Fn2%2BdJQr8VxyG6phNUwuxeP0%3D/chatbot?extension=#101e51&access=660e636cec00625" class="order-last text-white bg-blue-800 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">Register</a>
-        <button data-collapse-toggle="navbar-sticky" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky" aria-expanded="false">
+      <router-link :to="{ name: 'home' }"><img src="@/assets/logo.png" class="h-36 mx-auto" alt=""></router-link>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a href="https://patten.co.tz/app/forms/U2FsdGVkX19qF2WVmime2FQdmime2Fn2%2BdJQr8VxyG6phNUwuxeP0%3D/chatbot?extension=#101e51&access=660e636cec00625">Register</a></button>
+        <button data-collapse-toggle="navbar-multi-level" type="button"
+        @click="toggleMenu"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-multi-level" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -15,10 +17,9 @@
           </svg>
         </button>
       </div>
-      <div>
-        <img src="@/assets/logo.png" class="h-36 mx-auto" alt="">
-      </div>
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+
+      <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky"
+        :class="{ 'hidden': !isOpen }">
         <ul
           class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-800">
           <li> <router-link :to="{ name: 'home' }"
@@ -33,3 +34,11 @@
   </nav>
 </template>
 
+<script setup>
+import { ref } from 'vue';
+const isOpen = ref(false);
+
+const toggleMenu = () => {
+  isOpen.value = !isOpen.value;
+};
+</script>

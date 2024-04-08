@@ -2,17 +2,22 @@
 import sliderImg from "@/assets/img/background/header.jpg";
 import VueCountdown from "@chenfengyuan/vue-countdown";
 import { ref, computed } from "vue";
+
 const now = new Date();
-const newYear = new Date(now.getFullYear() + 1, 0, 1);
-const time = ref(newYear - now);
+const april24th = ref(new Date(now.getFullYear(), 3, 24)); // Month in JavaScript Date starts from 0 (0-January, 1-February, ...)
+
+if (now > april24th.value) { // If April 24th has already passed this year, calculate for next year
+  april24th.value.setFullYear(april24th.value.getFullYear() + 1);
+}
+
+const timeRemaining = computed(() => april24th.value - now);
+
+
 </script>
 
 <template>
-  <section
-    id="home"
-    class="py-14 lg:py-36 relative overflow-hidden bg-fixed bg-no-repeat bg-center bg-cover"
-    :style="'background-image: url(' + sliderImg + ');'"
-  >
+  <section id="home" class="py-14 lg:py-36 relative overflow-hidden bg-fixed bg-no-repeat bg-center bg-cover"
+    :style="'background-image: url(' + sliderImg + ');'">
     <div class="absolute bg-gradient-to-b from-slate-900/30 via-slate-900/70 to-slate-900 inset-0 w-full h-full"></div>
     <!-- <div class="absolute inset-0 bg-black/30"></div> -->
     <!-- end backdrop -->
@@ -44,39 +49,30 @@ const time = ref(newYear - now);
   </vue-countdown> -->
 
             <div class="">
-              <vue-countdown
-                :time="17 * 24 * 60 * 60 * 1000"
-                v-slot="{ days, hours, minutes, seconds }"
-              >
-                <div
-                  class="flex flex-wrap items-center justify-center gap-y-4 gap-x-4 sm:gap-x-0"
-                >
+              <vue-countdown :time="timeRemaining" v-slot="{ days, hours, minutes, seconds }">
+                <div class="flex flex-wrap items-center justify-center gap-y-4 gap-x-4 sm:gap-x-0">
                   <div
-                    class="inline-flex flex-col items-center justify-center rounded-lg border-2 border-dashed font-bold text-white h-24 w-24 px-3 py-2"
-                  >
-                    <span id="days" class="text-3xl"></span>
-                    <span class="text-4xl text-bold">{{ days }}</span>
+                    class="inline-flex flex-col items-center justify-center rounded-lg border-2 border-dashed font-bold text-white h-24 w-24 px-3 py-2">
+                    <span id="days" class="text-4xl text-bold">{{ days }}</span>
+                    <span class="text-baseline text-bold">Days</span>
                   </div>
                   <div class="text-2xl font-bold mx-4 text-white hidden sm:block">:</div>
                   <div
-                    class="inline-flex flex-col items-center justify-center rounded-lg border-2 border-dashed font-bold text-white h-24 w-24 px-3 py-2"
-                  >
-                    <span id="hours" class="text-3xl"></span>
-                    <span class="text-4xl text-bold">{{ hours }}</span>
+                    class="inline-flex flex-col items-center justify-center rounded-lg border-2 border-dashed font-bold text-white h-24 w-24 px-3 py-2">
+                    <span id="hours" class="text-4xl text-bold">{{ hours }}</span>
+                    <span class="text-baseline text-bold">Hours</span>
                   </div>
                   <div class="text-2xl font-bold mx-4 text-white hidden sm:block">:</div>
                   <div
-                    class="inline-flex flex-col items-center justify-center rounded-lg border-2 border-dashed font-bold text-white h-24 w-24 px-3 py-2"
-                  >
-                    <span id="minutes" class="text-3xl"></span>
-                    <span class="text-4xl text-bold">{{ minutes }}</span>
+                    class="inline-flex flex-col items-center justify-center rounded-lg border-2 border-dashed font-bold text-white h-24 w-24 px-3 py-2">
+                    <span id="minutes" class="text-4xl text-bold">{{ minutes }}</span>
+                    <span class="text-baseline text-bold">Minutes</span>
                   </div>
                   <div class="text-2xl font-bold mx-4 text-white hidden sm:block">:</div>
                   <div
-                    class="inline-flex flex-col items-center justify-center rounded-lg border-2 border-dashed font-bold text-white h-24 w-24 px-3 py-2"
-                  >
-                    <span id="seconds" class="text-3xl"></span>
-                    <span class="text-4xl text-bold">{{ seconds }}</span>
+                    class="inline-flex flex-col items-center justify-center rounded-lg border-2 border-dashed font-bold text-white h-24 w-24 px-3 py-2">
+                    <span id="seconds" class="text-4xl text-boldl">{{ seconds }}</span>
+                    <span class="text-baseline text-bold">Seconds</span>
                   </div>
                 </div>
               </vue-countdown>
@@ -85,14 +81,18 @@ const time = ref(newYear - now);
         </div>
         <!-- Flex End -->
       </div>
-
-      <div class="flex justify-center">
-        <div class="relative mt-20">
-          <a
-            href="https://patten.co.tz/app/forms/U2FsdGVkX19qF2WVmime2FQdmime2Fn2%2BdJQr8VxyG6phNUwuxeP0%3D/chatbot?extension=#101e51&access=660e636cec00625"
-            class="text-xl font-medium py-3 px-9 bg-white text-primary rounded-lg transition-all duration-500 hover:shadow-white/10"
-            >Register Now</a
-          >
+      <div class="container mx-auto mt-20">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:justify-center">
+          <div class="relative">
+            <a href="https://patten.co.tz/app/forms/U2FsdGVkX19qF2WVmime2FQdmime2Fn2%2BdJQr8VxyG6phNUwuxeP0%3D/chatbot?extension=#101e51&access=660e636cec00625"
+              class="text-xl font-medium py-3 px-9 bg-white text-primary rounded-lg transition-all duration-500 hover:shadow-white/10">Register
+              Now</a>
+          </div>
+          <div class="relative">
+            <a href="https://patten.co.tz/app/forms/U2FsdGVkX19qF2WVmime2FQdmime2Fn2%2BdJQr8VxyG6phNUwuxeP0%3D/chatbot?extension=#101e51&access=660e636cec00625"
+              class="text-xl font-medium py-3 px-9 bg-blue-700 text-white rounded-lg transition-all duration-500 hover:shadow-blue-800/10">Sponsor
+              Event</a>
+          </div>
         </div>
       </div>
       <!-- Flex End -->
@@ -100,591 +100,99 @@ const time = ref(newYear - now);
     <!-- Container End -->
   </section>
 
-  <section id="about" class="sm:py-20 pt-20 pb-10 active">
-    <div class="container mx-auto">
-      <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-10">
-        <div>
-          <img src=@/assets/img/homepage/chairman.jpg alt="Chairperson" class="max-w-full
+  <div class="gray bg-blue-100 mx-4 lg:container lg:mx-auto">
+    <section id="about" class="sm:py-20 pt-20 pb-10 active">
+      <div class="mx-2">
+        <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-10">
+          <div>
+            <img src=@/assets/img/homepage/chairman.jpg alt="Chairperson" class="max-w-full
           max-h-full h-auto">
-        </div>
-        <!-- end grid-col -->
+          </div>
+          <!-- end grid-col -->
 
-        <div class="lg:me-6">
-          <div class="mx-3">
-            <h2 class="text-3xl text-gray-800 font-bold mb-4">
-              Welcome to <br />
-              <span class="text-blue-800">Tanzania Private Sector <br>Foundation.</span>
-            </h2>
-            <div class="flex flex-col mb-6">
-              <p class="font-medium text-xl text-slate-700">
-                Established in 1998 with just 33 members, TPSF has grown exponentially to
-                become the umbrella organization for over 400 direct members, including
-                Business Management Organizations and private corporations. Our members
-                collectively serve over 6 million businesses across Tanzania and Zanzibar.
-              </p>
-              <p class="font-medium text-xl text-slate-700 mt-3">
-                TPSF serves as the Government's strategic partner and the foremost
-                advocate for the private sector. We are committed to representing a
-                unified voice, advising on policy formulation and reviews, and advocating
-                for an enabling business and investment climate.
-              </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 mb-10">
-              <div class="">
-                <h6 class="text-2xl font-bold mb-1">23<sup>rd</sup> - 24<sup>th</sup> April 2024 <br> Conference</h6>
-                <p class="text-base font-semibold text-slate-700 py-4">
-                  Julius Nyerere International Convention Centre, Dar es Salaam, Tanzania
+          <div class="lg:me-6">
+            <div class="mx-3">
+              <h2 class="text-3xl text-gray-800 font-bold mb-4">
+                Welcome to <br />
+                <span class="text-blue-800">Tanzania Private Sector <br>Foundation.</span>
+              </h2>
+              <div class="flex flex-col my-6">
+                <p class="font-medium text-xl text-slate-700">
+                  Established in 1998 with just 33 members, TPSF has grown exponentially to
+                  become the umbrella organization for over 400 direct members, including
+                  Business Management Organizations and private corporations. Our members
+                  collectively serve over 6 million businesses across Tanzania and Zanzibar.
                 </p>
-             
+                <p class="font-medium text-xl text-slate-700 mt-3">
+                  TPSF serves as the Government's strategic partner and the foremost
+                  advocate for the private sector. We are committed to representing a
+                  unified voice, advising on policy formulation and reviews, and advocating
+                  for an enabling business and investment climate.
+                </p>
               </div>
-              <div class="">
-                <h6 class="text-2xl font-bold mb-1">24<sup>th</sup> AGM in the morning & Gala Dinner in the evening</h6>
-                   <p class="text-base font-semibold text-slate-700 py-4">The Super Dome, Dar es Salaam, <br> Tanzania</p>
-              </div>
-            </div>
 
-            <a
-              href="https://tpsftz.org/"
-              class="group relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none text-primary hover:text-primary duration-500"
-              ><span
-                class="absolute h-px w-7/12 group-hover:w-full transition-all duration-500 rounded bg-primary/80 -bottom-0"
-              ></span
-              >Learn More <i class="uil uil-angle-right text-xl/none align-middle"></i
-            ></a>
+              <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 my-12">
+                <div class="">
+                  <h6 class="text-2xl font-bold mb-1">23<sup>rd</sup> - 24<sup>th</sup> April 2024 <br> Conference</h6>
+                  <p class="text-base font-semibold text-slate-700 py-4">
+                    Julius Nyerere International Convention Centre, Dar es Salaam, Tanzania
+                  </p>
+
+                </div>
+                <div class="">
+                  <h6 class="text-2xl font-bold mb-1">24<sup>th</sup> AGM in the morning & Gala Dinner in the evening
+                  </h6>
+                  <p class="text-base font-semibold text-slate-700 py-4">Super Dome, Dar es Salaam, <br> Tanzania</p>
+                </div>
+              </div>
+
+              <a href="https://tpsftz.org/"
+                class="group relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none text-primary hover:text-primary duration-500"><span
+                  class="absolute h-px w-7/12 group-hover:w-full transition-all duration-500 rounded bg-primary/80 -bottom-0"></span>Learn
+                More <i class="uil uil-angle-right text-xl/none align-middle"></i></a>
+            </div>
+          </div>
+          <!-- end grid-col -->
+        </div>
+        <!-- Grid End -->
+      </div>
+      <!-- Container End -->
+    </section>
+    <div class="contact-section-one my-24  lg:mt-[30px] md:mt-[30px] sm:mt-[30px] xsm:mt-[30px]">
+      <div class="container mx-4">
+        <div class="grid grid-flow-row lg:grid-flow-col" style="visibility: visible; animation-name: fadeInRight;">
+          <div class="address-block-three flex mb-[70px] lg:mb-10 md:mb-10 sm:mb-10 xsm:mb-10">
+            <div class="icon w-[35px] mt-[7px]"><img class=" ml-auto" src="@/assets/img/icon/icon_161.svg" alt=""></div>
+            <div class="text w-[calc(100%_-_35px)] pl-[30px]">
+              <h5 class="title text-[26px] mb-2 lg:text-[20px] md:text-[20px] sm:text-[20px] xsm:text-[20px]">For
+                Sponsoring</h5>
+              <p
+                class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
+                <a href="tel:+255759979657"
+                  class="call text-[22px] text-[color:var(--prime-two)] mt-[3px] hover:underline lg:text-[18px] md:text-[18px] sm:text-[18px] xsm:text-[18px]">+255
+                  759 979 657</a></p>
+            </div>
+          </div> <!-- /.address-block-three -->
+
+          <div class="address-block-three flex mb-[70px] lg:mb-10 md:mb-10 sm:mb-10 xsm:mb-10 ">
+            <div class="icon w-[35px] mt-[7px]"><img class=" ml-auto" src="@/assets/img/icon/icon_163.svg" alt=""></div>
+            <div class="text w-[calc(100%_-_35px)] pl-[30px]">
+              <h5 class="title text-[26px] mb-2 lg:text-[20px] md:text-[20px] sm:text-[20px] xsm:text-[20px]">Messages
+                and Call</h5>
+              <p
+                class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
+                <a href="tel:+255752187582"
+                  class="call text-[22px] text-[color:var(--prime-two)] mt-[3px] hover:underline lg:text-[18px] md:text-[18px] sm:text-[18px] xsm:text-[18px]">+255
+                  752 187 582</a></p>
+              <p
+                class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
+                <a href="tel:+255785274238"
+                  class="call text-[22px] text-[color:var(--prime-two)] mt-[3px] hover:underline lg:text-[18px] md:text-[18px] sm:text-[18px] xsm:text-[18px]">+255 785 274 238</a></p>
+            </div>
           </div>
         </div>
-        <!-- end grid-col -->
-      </div>
-      <!-- Grid End -->
-    </div>
-    <!-- Container End -->
-  </section>
-
-  <!-- <section class="text-gray-700 body-font overflow-hidden border-t bg-black py-12">
-
-    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Would you love to sponsor us?</h2>
-          <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Take the first step towards unlocking your potential - choose your package now and embark on a journey of growth and prosperity with TPSF</p>
-      </div>
-<div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="lg:w-1/4 mt-48 hidden lg:block">
-      <div class="mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden text-sm">
-        <p class="bg-gray-400 text-gray-900 h-12 text-left px-4 flex items-center justify-start py-2">Right to be mentioned and placement of logo in all preromotion materials</p>
-        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Right to be mentioned in short video clips</p>
-        <p class="bg-gray-400 text-gray-900 h-12 text-left px-4 flex items-center justify-start">To be featured in the Private sector 25 commemorative Journal</p>
-        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Private Sector Marathon</p>
-        <p class="bg-gray-400 h-20 text-gray-900 text-left px-4 flex items-center justify-start">Brief introduction of the company & products and services in line with the theme.</p>
-        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Sitting at high table</p>
-        <p class="bg-gray-400 h-20 text-gray-900 text-left px-4 flex items-center justify-start">Logo placement on all marketing and Promotional materials for the event Banners, program etc.</p>
-        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Inside main hall branding as per guidelines which will be provided</p>
-        <p class="bg-gray-400 h-20 text-gray-900 text-left px-4 flex items-center justify-start">Full page advertisement in the conference programme inside cover</p>
-        <p class="text-gray-400 h-20 text-left px-4 flex items-center justify-start">Projector/LED screen advertisement of the sponsors products display throughout the event</p>
-        <p class="bg-gray-400 h-12 text-gray-900 text-left px-4 flex items-center justify-start">Distribute promotion materials to all delegates inside the venue</p>
-        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Right to distribute giveaways to dele ates inside the venue</p>
-        <p class="bg-gray-400 h-12 text-gray-900 text-left px-4 flex items-center justify-start">Logo placement in all romotion avenues</p>
-        <p class="text-gray-400 h-20 text-left px-4 flex items-center justify-start">Acknowledgement as sponsor in all key statements/ speeches / Press Conferences</p>
-        <p class="bg-gray-400 h-12 text-gray-900 text-left px-4 flex items-center justify-start">Mention in during the live coverage on radio and TV as well as the MC</p>
-        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">Mention in all media attendances</p>
-        <p class="bg-gray-400 h-12 text-gray-900 text-left px-4 flex items-center justify-start">Right to logo placement on program</p>
-        <p class="text-gray-400 h-12 text-left px-4 flex items-center justify-start">A display area for your brand promotion at the main entrance</p>
-        <p class="bg-gray-400 text-gray-900 text-left px-4 flex items-center justify-start">Official Photo opportunity with the hi h- rofile uests</p>
-        <p class="text-gray-400 h-12 text-;eft px-4 flex items-center justify-start">Certificate of Appreciation b Guest of Honor</p>
       </div>
     </div>
-    <div class="flex lg:w-3/4 w-full flex-wrap lg:border border-gray-300 rounded-lg">
-      <div class="lg:w-1/4 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
-        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <h3 class="tracking-widest text-white">PLATINUM</h3>
-          <h2 class="mr-2 text-5xl text-white font-extrabold">$ 50,000</h2>
-        </div>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class="h-12 bg-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class=" bg-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
-          All
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          Strategic location (as outlined in the look and feel document)
-        </p>
-        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p><p class="text-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p><p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-      </div>
-      <div class="lg:w-1/4 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-gray-300 relative">
-        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <h3 class="tracking-widest text-white">GOLD</h3>
-          <h2 class="mr-2 text-5xl text-white font-extrabold">$ 30,000</h2>
-        </div>
-        </div>
-        
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class="h-12 bg-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class=" bg-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
-          All
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          Strategic location (as outlined in the look and feel document)
-        </p>
-        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p><p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-      </div>
-      <div class="lg:w-1/4 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-gray-300 relative">
-        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <h3 class="tracking-widest text-white">SILVER</h3>
-          <h2 class="mr-2 text-5xl text-white font-extrabold">$ 10,000</h2>
-        </div>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class="h-12 bg-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class=" bg-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
-          All
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          Strategic location (as outlined in the look and feel document)
-        </p>
-        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p><p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-      </div>
-      <div class="lg:w-1/4 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
-        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <h3 class="tracking-widest text-white">BRONZE</h3>
-          <h2 class="mr-2 text-5xl text-white font-extrabold">$ 5,000</h2>
-        </div>
-        
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="h-12 bg-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">Half a page</p>
-        <p class="h-12 text-gray-400 px-6 text-center leading-relaxed flex items-center justify-center">As a Main Sponsor</p>
-        <p class=" bg-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
-          All
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          Strategic location (as outlined in the look and feel document)
-        </p>
-        <p class="bg-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p><p class="text-gray-400 text-center h-20 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p><p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-400 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- add contact for sponsoprs 
-</section> -->
+  </div>
 
 </template>
