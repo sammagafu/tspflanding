@@ -84,12 +84,12 @@ const timeRemaining = computed(() => april24th.value - now);
       <div class="container mx-auto mt-20">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:justify-center">
           <div class="relative">
-            <a href="https://patten.co.tz/app/forms/U2FsdGVkX19qF2WVmime2FQdmime2Fn2%2BdJQr8VxyG6phNUwuxeP0%3D/chatbot?extension=#101e51&access=660e636cec00625"
+            <a href="https://patten.co.tz/app/events/U2FsdGVkX19DcbWLMyY1cMWhzMj6d89UT%2BOUWp6AqRE%3D/registrations/attendees?extension=#101e51&access=660e636cec00625"
               class="text-xl font-medium py-3 px-9 bg-white text-primary rounded-lg transition-all duration-500 hover:shadow-white/10">Register
               Now</a>
           </div>
           <div class="relative">
-            <a href="https://patten.co.tz/app/forms/U2FsdGVkX19qF2WVmime2FQdmime2Fn2%2BdJQr8VxyG6phNUwuxeP0%3D/chatbot?extension=#101e51&access=660e636cec00625"
+            <a href="https://patten.co.tz/app/events/U2FsdGVkX19DcbWLMyY1cMWhzMj6d89UT%2BOUWp6AqRE%3D/registrations/attendees?extension=#101e51&access=660e636cec00625"
               class="text-xl font-medium py-3 px-9 bg-blue-700 text-white rounded-lg transition-all duration-500 hover:shadow-blue-800/10">Sponsor
               Event</a>
           </div>
