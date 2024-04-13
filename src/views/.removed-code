@@ -523,3 +523,99 @@
 
   <!-- add contact for sponsoprs 
 </section> -->
+
+<!-- speakers
+ -->
+<section id="speakers" class="py-20">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-center mb-16">
+                <div class="max-w-2xl text-center">
+                    <h5 class="capitalize text-lg  text-gray-800 font-medium mb-2">Our <span class="font-semibold text-primary">Speakers</span></h5>
+                    <h2 class="text-3xl/snug font-bold capitalize text-gray-800 mb-1.5">Event Speakers</h2>
+                    <p class="text-base font-medium text-gray-500 max-w-xl">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque rem aperiam.</p>
+                </div>
+            </div><!-- end flex -->
+
+            <div class="grid md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
+                <div class="lg:col-span-3 md:col-span-6">
+                    <div class="group text-center">
+                        <div class="relative inline-block mx-auto rounded-lg overflow-hidden">
+                            <img src="@/assets/img/speakers/1.jpg" class="" alt="">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black rounded-lg opacity-0 group-hover:opacity-100 duration-500"></div>
+
+                            <div class="absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
+                                <ul class="mb-4 space-x-2">
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook h-5 w-5 text-primary fill-primary/25"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram h-5 w-5 text-pink-500 fill-pink-500/25"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="twitter" class="lucide lucide-twitter h-5 w-5 text-sky-500 fill-sky-500/25"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a></li>
+                                </ul><!-- end social-->
+                                <p class="text-base font-semibold text-white">Singer</p>
+                            </div>
+                        </div>
+
+                        <a href="" class="block text-lg font-semibold group-hover:text-primary duration-500 mt-3">John Smith</a>
+                    </div>
+                </div><!-- end grid-col -->
+                
+                <div class="lg:col-span-3 md:col-span-6">
+                    <div class="group text-center">
+                        <div class="relative inline-block mx-auto rounded-lg overflow-hidden">
+                            <img src="@/assets/img/speakers/1.jpg" class="" alt="">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black rounded-lg opacity-0 group-hover:opacity-100 duration-500"></div>
+
+                            <div class="absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
+                                <ul class="mb-4 space-x-2">
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook h-5 w-5 text-primary fill-primary/25"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram h-5 w-5 text-pink-500 fill-pink-500/25"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="twitter" class="lucide lucide-twitter h-5 w-5 text-sky-500 fill-sky-500/25"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a></li>
+                                </ul><!--end social-->
+                                <p class="text-base font-semibold text-white">motivational speaker.</p>
+                            </div>
+                        </div>
+
+                        <a href="" class="block text-lg font-semibold group-hover:text-primary duration-500 mt-3">Lenny Morton</a>
+                    </div>
+                </div><!-- end grid-col -->
+                
+                <div class="lg:col-span-3 md:col-span-6">
+                    <div class="group text-center">
+                        <div class="relative inline-block mx-auto rounded-lg overflow-hidden">
+                            <img src="@/assets/img/speakers/1.jpg" class="" alt="">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black rounded-lg opacity-0 group-hover:opacity-100 duration-500"></div>
+
+                            <div class="absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
+                                <ul class="mb-4 space-x-2">
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook h-5 w-5 text-primary fill-primary/25"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram h-5 w-5 text-pink-500 fill-pink-500/25"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="twitter" class="lucide lucide-twitter h-5 w-5 text-sky-500 fill-sky-500/25"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a></li>
+                                </ul><!--end social -->
+                                <p class="text-base font-semibold text-white">Organizer</p>
+                            </div>
+                        </div>
+
+                        <a href="" class="block text-lg font-semibold group-hover:text-primary duration-500 mt-3">Jessica Parker</a>
+                    </div>
+                </div><!-- end grid-col -->
+                
+                <div class="lg:col-span-3 md:col-span-6">
+                    <div class="group text-center">
+                        <div class="relative inline-block mx-auto rounded-lg overflow-hidden">
+                            <img src="@/assets/img/speakers/1.jpg" class="" alt="">
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black rounded-lg opacity-0 group-hover:opacity-100 duration-500"></div>
+
+                            <div class="absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
+                                <ul class="mb-4 space-x-2">
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook h-5 w-5 text-primary fill-primary/25"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram h-5 w-5 text-pink-500 fill-pink-500/25"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+                                    <li class="inline-block"><a href="" class="h-10 w-10 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-lg bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="twitter" class="lucide lucide-twitter h-5 w-5 text-sky-500 fill-sky-500/25"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a></li>
+                                </ul><!--end icon-->
+                                <p class="text-base font-semibold text-white">Event Manager</p>
+                            </div>
+                        </div>
+
+                        <a href="" class="block text-lg font-semibold group-hover:text-primary duration-500 mt-3">Leon Erickson</a>
+                    </div>
+                </div><!-- end grid-col -->
+            </div><!-- end grid -->
+        </div><!-- Container End -->
+    </section>
