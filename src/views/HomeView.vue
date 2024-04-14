@@ -28,7 +28,7 @@ const timeRemaining = computed(() => april24th.value - now);
           30 <sup>th</sup> - 31 <sup>st</sup> May 2024
         </span>
         <h1 class="lg:text-6xl text-3xl font-extrabold text-white my-8">
-          25th Anniversary of TPSF-Celebrating 25 Years of Pioneering Private Sector-led
+          25<sup>th</sup> Anniversary of TPSF-Celebrating 25 Years of Pioneering Private Sector-led
           Growth.
         </h1>
         <div class="flex justify-center">
@@ -140,7 +140,13 @@ const timeRemaining = computed(() => april24th.value - now);
 
                 </div>
                 <div class="">
-                  <h6 class="text-2xl font-bold mb-1">31<sup>st</sup>AGM in the morning & Gala Dinner
+                  <h6 class="text-2xl font-bold mb-1">31<sup>st</sup>May 2024 Annual General Meeting
+                  </h6>
+                  <p class="text-base font-semibold text-slate-700 py-4">  Julius Nyerere International Convention Centre, Dar es Salaam, Tanzania</p>
+                </div>
+
+                <div class="">
+                  <h6 class="text-2xl font-bold mb-1">31<sup>st</sup>May 2024 Gala Dinner
                   </h6>
                   <p class="text-base font-semibold text-slate-700 py-4">The Super Dome, Masaki Dar es Salaam, <br> Tanzania</p>
                 </div>
@@ -164,8 +170,7 @@ const timeRemaining = computed(() => april24th.value - now);
           <div class="address-block-three flex mb-[70px] lg:mb-10 md:mb-10 sm:mb-10 xsm:mb-10">
             <div class="icon w-[35px] mt-[7px]"><img class=" ml-auto" src="@/assets/img/icon/icon_161.svg" alt=""></div>
             <div class="text w-[calc(100%_-_35px)] pl-[30px]">
-              <h5 class="title text-[26px] mb-2 lg:text-[20px] md:text-[20px] sm:text-[20px] xsm:text-[20px]">For
-                Sponsoring</h5>
+              <h5 class="title text-[26px] mb-2 lg:text-[20px] md:text-[20px] sm:text-[20px] xsm:text-[20px]">For Sponsorship or Exhibition</h5>
               <p
                 class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
                 <a href="tel:+255759979657"
