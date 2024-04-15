@@ -17,7 +17,6 @@
     <swiper
     :slides-per-view="8"
     :space-between="50"
-    :centeredSlides="true"
     :modules="modules"
     :autoplay="{
       delay: 2500,
@@ -44,6 +43,9 @@
   >
     <swiper-slide><img src="@/assets/img/sponsors/hmh.png" alt=""></swiper-slide>
     <swiper-slide><img src="@/assets/img/sponsors/carmel.png" alt=""></swiper-slide>
+    <swiper-slide><img src="@/assets/img/sponsors/tma.png" alt=""></swiper-slide>
+    <swiper-slide><img src="@/assets/img/sponsors/norway.png" alt=""></swiper-slide>
+    <swiper-slide><img src="@/assets/img/sponsors/ireland.png" alt=""></swiper-slide>
 
 
   </swiper>
