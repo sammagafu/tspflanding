@@ -46,6 +46,7 @@
     <swiper-slide><img src="@/assets/img/sponsors/tma.png" alt=""></swiper-slide>
     <swiper-slide><img src="@/assets/img/sponsors/norway.png" alt=""></swiper-slide>
     <swiper-slide><img src="@/assets/img/sponsors/ireland.png" alt=""></swiper-slide>
+    <swiper-slide><img src="@/assets/img/sponsors/fcdo.png" alt=""></swiper-slide>
 
 
   </swiper>
