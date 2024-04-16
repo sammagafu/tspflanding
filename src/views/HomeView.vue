@@ -100,7 +100,7 @@ const timeRemaining = computed(() => april24th.value - now);
     <!-- Container End -->
   </section>
 
-  <div class="gray bg-blue-100 mx-2 my-4 lg:container lg:mx-auto">
+  <div class="gray bg-blue-200 mx-2 my-4 lg:container lg:mx-auto">
     <section id="about" class="">
       <div class="mx-2">
         <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-10">
@@ -170,8 +170,8 @@ const timeRemaining = computed(() => april24th.value - now);
         <div class="grid grid-flow-row lg:grid-flow-col" style="visibility: visible; animation-name: fadeInRight;">
           <div class="address-block-three flex mb-4 lg:mb-10 md:mb-10 sm:mb-10 xsm:mb-10">
             <div class="icon w-[35px] mt-[7px]"><img class=" ml-auto" src="@/assets/img/icon/icon_161.svg" alt=""></div>
-            <div class="text w-[calc(100%_-_35px)] pl-[30px]">
-              <h5 class="text-xl font-bold">For Sponsorship or Exhibition</h5>
+            <div class="text w-[calc(100%_-_35px)] pl-4">
+              <h5 class="text-xl font-bold">For Sponsorship / Exhibition</h5>
               <p
                 class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
                 <a href="tel:+255759979657"
@@ -182,8 +182,8 @@ const timeRemaining = computed(() => april24th.value - now);
 
           <div class="address-block-three flex mb-4 lg:mb-10 md:mb-10 sm:mb-10 xsm:mb-10 ">
             <div class="icon w-[35px] mt-[7px]"><img class=" ml-auto" src="@/assets/img/icon/icon_163.svg" alt=""></div>
-            <div class="text w-[calc(100%_-_35px)] pl-[30px]">
-              <h5 class="title text-[26px] mb-2 lg:text-[20px] md:text-[20px] sm:text-[20px] xsm:text-[20px]">Messages
+            <div class="text w-[calc(100%_-_35px)] pl-4">
+              <h5 class="text-xl font-bold">Messages
                 and Call</h5>
               <p
                 class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
