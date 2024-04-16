@@ -8,7 +8,7 @@
 
 
 
-<div class="container mx-auto py-12">
+<div class="container lg:mx-auto mx-4rf5">
   <div class="py-12">
   <p class="text-4xl font-bold text-black">
     Platinum Sponsors
