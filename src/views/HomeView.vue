@@ -88,7 +88,7 @@ const timeRemaining = computed(() => april24th.value - now);
               class="text-xl font-medium py-3 px-9 bg-white text-primary rounded-lg transition-all duration-500 hover:shadow-white/10">Register
               Now</a>
           </div>
-          <div class="relative">
+          <div class="relative sm:pt-4">
             <a href="https://patten.co.tz/app/events/U2FsdGVkX19DcbWLMyY1cMWhzMj6d89UT%2BOUWp6AqRE%3D/registrations/attendees?extension=#101e51&access=660e636cec00625"
               class="text-xl font-medium py-3 px-9 bg-blue-700 text-white rounded-lg transition-all duration-500 hover:shadow-blue-800/10">Sponsor
               Event</a>
@@ -117,13 +117,13 @@ const timeRemaining = computed(() => april24th.value - now);
                 <span class="text-blue-800">Tanzania Private Sector <br>Foundation.</span>
               </h2>
               <div class="flex flex-col my-4">
-                <p class="font-medium text-baseline text-slate-900">
+                <p class="font-medium text-baseline text-slate-900 text-justify">
                   Established in 1998 with just 33 members, TPSF has grown exponentially to
                   become the umbrella organization for over 400 direct members, including
                   Business Management Organizations and private corporations. Our members
                   collectively serve over 6 million businesses across Tanzania and Zanzibar.
                 </p>
-                <p class="font-medium text-baseline text-slate-900">
+                <p class="font-medium text-baseline text-slate-900 text-justify pt-4">
                   TPSF serves as the Government's strategic partner and the foremost
                   advocate for the private sector. We are committed to representing a
                   unified voice, advising on policy formulation and reviews, and advocating
@@ -138,22 +138,23 @@ const timeRemaining = computed(() => april24th.value - now);
 
               <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 my-12">
                 <div class="">
-                  <h6 class="text-xl font-bold mb-1">30<sup>th</sup> - 31<sup>st</sup> May 2024 <br> Conference</h6>
-                  <p class="text-base font-semibold text-slate-700 py-2">
-                    Julius Nyerere International Convention Centre, Dar es Salaam, Tanzania
+          
+                  <h6 class="text-l font-bold mb-1"> Date : 30<sup>th</sup> - 31<sup>st</sup> May 2024<br>Program : Conference</h6>
+                  <p class="text-base font-bold mb-1">
+                    Venue : (JNICC) Julius Nyerere International Convention Centre
                   </p>
 
                 </div>
                 <div class="">
-                  <h6 class="text-xl font-bold mb-1">31<sup>st</sup>May 2024 Annual General Meeting
+                  <h6 class="text-l font-bold mb-1">Date : 31<sup>st</sup>May 2024 <br>Program : Annual General Meeting
                   </h6>
-                  <p class="text-base font-semibold text-slate-700 py-4">  Julius Nyerere International Convention Centre, Dar es Salaam, Tanzania</p>
+                  <p class="text-base font-bold mb-1">(JNICC) Julius Nyerere International Convention Centre</p>
                 </div>
 
                 <div class="">
-                  <h6 class="text-xl font-bold mb-1">31<sup>st</sup>May 2024 Gala Dinner
+                  <h6 class="text-l font-bold mb-1">Date : 31<sup>st</sup>May 2024 <br>Program : Gala Dinner
                   </h6>
-                  <p class="text-base font-semibold text-slate-700 py-4">The Super Dome, Masaki Dar es Salaam, <br> Tanzania</p>
+                  <p class="text-l font-bold mb-1">Venue : The Super Dome</p>
                 </div>
               </div>
             </div>
@@ -173,9 +174,9 @@ const timeRemaining = computed(() => april24th.value - now);
             <div class="text w-[calc(100%_-_35px)] pl-4">
               <h5 class="text-xl font-bold">For Sponsorship / Exhibition</h5>
               <p
-                class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
+                class=" text-[18px] leading-[1.65em] text-gray-600 mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
                 <a href="tel:+255759979657"
-                  class="font-medium">+255
+                  class="text-l font-bold mb-1">+255
                   759 979 657</a></p>
             </div>
           </div> <!-- /.address-block-three -->
@@ -186,14 +187,14 @@ const timeRemaining = computed(() => april24th.value - now);
               <h5 class="text-xl font-bold">Messages
                 and Call</h5>
               <p
-                class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
+                class=" text-[18px] leading-[1.65em] text-gray-600 mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
                 <a href="tel:+255752187582"
-                  class="font-medium">+255
+                  class="text-l font-bold mb-1">+255
                   752 187 582</a></p>
               <p
-                class=" text-[18px] leading-[1.65em] text-[#878787] mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
+                class=" text-[18px] leading-[1.65em] text-gray-600 mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
                 <a href="tel:+255785274238"
-                  class="font-medium">+255 785 274 238</a></p>
+                  class="text-l font-bold mb-1">+255 785 274 238</a></p>
             </div>
           </div>
         </div>
