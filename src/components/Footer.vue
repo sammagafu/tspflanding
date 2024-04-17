@@ -51,49 +51,92 @@
 
   </swiper>
 </div>
+</div>
 
-  <p class="text-4xl font-bold text-black">
-    Silver Sponsors
-    </p>
+<div class="container mx-auto">
+  <div class="py-6">
+  <p class="text-2xl font-bold text-black">
+    Gold Sponsors
+  </p>
 
     <swiper
-    :slides-per-view="8"
+    :slides-per-view="6"
     :space-between="50"
     :modules="modules"
-    :centeredSlides="true"
     :autoplay="{
-      delay: 3500,
+      delay: 2500,
       disableOnInteraction: false,
     }"
     :breakpoints="{
       '@0.00': {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 10,
       },
       '@0.75': {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       '@1.00': {
-        slidesPerView: 6,
+        slidesPerView: 3,
         spaceBetween: 40,
       },
       '@1.50': {
-        slidesPerView: 8,
+        slidesPerView: 4,
         spaceBetween: 50,
       },
     }"
   >
-  <swiper-slide><img src="@/assets/img/sponsors/elswedy.png" alt="Elsewedy"></swiper-slide>
-    <swiper-slide><img src="@/assets/img/sponsors/ttc.png" alt=""></swiper-slide>
+    <swiper-slide><img src="@/assets/img/sponsors/africab.png" alt=""></swiper-slide>
 
 
   </swiper>
 </div>
+</div>
+
+<div class="container mx-auto">
+
+<p class="text-2xl font-bold text-black">
+  Silver Sponsors
+  </p>
+
+  <swiper
+  :slides-per-view="8"
+  :space-between="50"
+  :modules="modules"
+  :centeredSlides="true"
+  :autoplay="{
+    delay: 3500,
+    disableOnInteraction: false,
+  }"
+  :breakpoints="{
+    '@0.00': {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '@0.75': {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    '@1.00': {
+      slidesPerView: 6,
+      spaceBetween: 40,
+    },
+    '@1.50': {
+      slidesPerView: 8,
+      spaceBetween: 50,
+    },
+  }"
+>
+<swiper-slide><img src="@/assets/img/sponsors/elswedy.png" alt="Elsewedy"></swiper-slide>
+  <swiper-slide><img src="@/assets/img/sponsors/ttc.png" alt=""></swiper-slide>
+
+
+</swiper>
+</div>
 
 
 <div class="container mx-auto">
-  <p class="text-4xl font-bold text-black">
+  <p class="text-2xl font-bold text-black">
     Bronze Sponsors
     </p>
 
@@ -129,6 +172,7 @@
     <swiper-slide><img src="@/assets/img/sponsors/nmb.png" alt=""></swiper-slide>
     <swiper-slide><img src="@/assets/img/sponsors/pepsi.png" alt=""></swiper-slide>
     <swiper-slide><img src="@/assets/img/sponsors/tdv.png" alt=""></swiper-slide>
+    <swiper-slide><img src="@/assets/img/sponsors/advent.png" alt=""></swiper-slide>
 
 
   </swiper>
