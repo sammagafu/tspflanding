@@ -1,8 +1,15 @@
 <script setup>
 import sliderImg from "@/assets/img/background/header.jpg";
 import VueCountdown from "@chenfengyuan/vue-countdown";
+import {
+  Swiper,
+  SwiperSlide
+} from 'swiper/vue';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
 import { ref, computed } from "vue";
-
+const modules = [Navigation,Autoplay];
 const now = new Date();
 const april24th = ref(new Date(now.getFullYear(), 4, 30)); // Month in JavaScript Date starts from 0 (0-January, 1-February, ...)
 
@@ -28,8 +35,7 @@ const timeRemaining = computed(() => april24th.value - now);
           30 <sup>th</sup> - 31 <sup>st</sup> May 2024
         </span>
         <h1 class="lg:text-6xl text-xl font-extrabold text-white my-4">
-          25<sup>th</sup> Anniversary of TPSF-Celebrating 25 Years of Pioneering Private Sector-led
-          Growth.
+          25<sup>th</sup> Anniversary of TPSF <br />A legacy of championing private sector Growth Towards Vision 2050
         </h1>
         <div class="flex justify-center">
           <div class="max-w-3xl text-center">
@@ -105,8 +111,19 @@ const timeRemaining = computed(() => april24th.value - now);
       <div class="mx-2">
         <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-10">
           <div>
-            <img src=@/assets/img/homepage/chairman.jpg alt="Chairperson" class="max-w-full
-          max-h-full h-auto bg-cover rounded-lg">
+            <swiper :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }" :modules="modules">
+              <swiper-slide><img src=@/assets/img/homepage/chairman.jpg alt="Chairperson" class="max-w-full max-h-full h-auto bg-cover rounded-lg"></swiper-slide>
+              <swiper-slide><img src=@/assets/img/homepage/chairman-1.jpg alt="Chairperson" class="max-w-full max-h-full h-auto bg-cover rounded-lg"></swiper-slide>
+              <swiper-slide><img src=@/assets/img/homepage/chairman-2.jpg alt="Chairperson" class="max-w-full max-h-full h-auto bg-cover rounded-lg"></swiper-slide>
+              <swiper-slide><img src=@/assets/img/homepage/chairman-3.jpg alt="Chairperson" class="max-w-full max-h-full h-auto bg-cover rounded-lg"></swiper-slide>
+              <swiper-slide><img src=@/assets/img/homepage/chairman-4.jpg alt="Chairperson" class="max-w-full max-h-full h-auto bg-cover rounded-lg"></swiper-slide>
+              <swiper-slide><img src=@/assets/img/homepage/chairman-5.jpg alt="Chairperson" class="max-w-full max-h-full h-auto bg-cover rounded-lg"></swiper-slide>
+              <swiper-slide><img src=@/assets/img/homepage/chairman-6.jpg alt="Chairperson" class="max-w-full max-h-full h-auto bg-cover rounded-lg"></swiper-slide>
+            </swiper>
+
           </div>
           <!-- end grid-col -->
 
@@ -138,8 +155,9 @@ const timeRemaining = computed(() => april24th.value - now);
 
               <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 my-12">
                 <div class="">
-          
-                  <h6 class="text-l font-bold mb-1"> Date : 30<sup>th</sup> - 31<sup>st</sup> May 2024<br>Program : Conference</h6>
+
+                  <h6 class="text-l font-bold mb-1"> Date : 30<sup>th</sup> - 31<sup>st</sup> May 2024<br>Program :
+                    Conference</h6>
                   <p class="text-base font-bold mb-1">
                     Venue : (JNICC) Julius Nyerere International Convention Centre
                   </p>
@@ -175,9 +193,9 @@ const timeRemaining = computed(() => april24th.value - now);
               <h5 class="text-xl font-bold">For Sponsorship / Exhibition</h5>
               <p
                 class=" text-[18px] leading-[1.65em] text-gray-600 mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
-                <a href="tel:+255759979657"
-                  class="text-l font-bold mb-1">+255
-                  759 979 657</a></p>
+                <a href="tel:+255759979657" class="text-l font-bold mb-1">+255
+                  759 979 657</a>
+              </p>
             </div>
           </div> <!-- /.address-block-three -->
 
@@ -188,13 +206,13 @@ const timeRemaining = computed(() => april24th.value - now);
                 and Call</h5>
               <p
                 class=" text-[18px] leading-[1.65em] text-gray-600 mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
-                <a href="tel:+255752187582"
-                  class="text-l font-bold mb-1">+255
-                  752 187 582</a></p>
+                <a href="tel:+255752187582" class="text-l font-bold mb-1">+255
+                  752 187 582</a>
+              </p>
               <p
                 class=" text-[18px] leading-[1.65em] text-gray-600 mb-0 lg:text-[16px] md:text-[16px] sm:text-[16px] xsm:text-[16px]">
-                <a href="tel:+255785274238"
-                  class="text-l font-bold mb-1">+255 785 274 238</a></p>
+                <a href="tel:+255785274238" class="text-l font-bold mb-1">+255 785 274 238</a>
+              </p>
             </div>
           </div>
         </div>

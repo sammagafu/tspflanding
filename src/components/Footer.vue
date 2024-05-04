@@ -52,7 +52,6 @@
     <div class="grid grid-cols-6 lg:grid-cols-4 grid-flow-rows gap-4">
       <img src="@/assets/img/sponsors/nbc.png" alt="hmh">
       <img src="@/assets/img/sponsors/nmb.png" alt="camel oil">
-      <img src="@/assets/img/sponsors/tma.png" alt="tma">
       <img src="@/assets/img/sponsors/pepsi.png" alt="norway">
       <img src="@/assets/img/sponsors/tdv.png" alt="irealand">
       <img src="@/assets/img/sponsors/advent.png" alt="fcdo">
