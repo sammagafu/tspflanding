@@ -20,7 +20,7 @@
             <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
                 <div class="">
                     <h2 class="text-2xl py-6 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
-                        DAY 1 THURSDAY MAY 30TH, 2024 AT JNICC</h2>
+                        DAY 1 THURSDAY JULY 18TH, 2024 AT JNICC</h2>
                 </div>
                 <div class="-my-4 divide-y divide-gray-200 ">
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -316,7 +316,7 @@
             <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
                 <div class="">
                     <h2 class="text-2xl py-6 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
-                        DAY 2 : WEDNESDAY, MAY 31ST, 2024 - JNICC</h2>
+                        DAY 2 : FRIDAY, JULY 19TH, 2024 - JNICC</h2>
                 </div>
                 <div class="-my-4 divide-y divide-gray-200 ">
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">

@@ -11,7 +11,7 @@ import 'swiper/css';
 import { ref, computed } from "vue";
 const modules = [Navigation,Autoplay];
 const now = new Date();
-const april24th = ref(new Date(now.getFullYear(), 4, 30)); // Month in JavaScript Date starts from 0 (0-January, 1-February, ...)
+const april24th = ref(new Date(now.getFullYear(), 6, 18)); // Month in JavaScript Date starts from 0 (0-January, 1-February, ...)
 
 if (now > april24th.value) { // If April 24th has already passed this year, calculate for next year
   april24th.value.setFullYear(april24th.value.getFullYear() + 1);
@@ -32,7 +32,7 @@ const timeRemaining = computed(() => april24th.value - now);
     <div class="container mx-auto">
       <div class="relative text-center mx-4">
         <span class="text-white font-medium bg-blue-800 py-[5px] px-4 rounded-md">
-          30 <sup>th</sup> - 31 <sup>st</sup> May 2024
+          18 <sup>th</sup> - 19 <sup>th</sup> JUly 2024
         </span>
         <h1 class="lg:text-6xl text-xl font-extrabold text-white my-4">
           25<sup>th</sup> Anniversary of TPSF <br />A legacy of championing private sector Growth Towards Vision 2050
