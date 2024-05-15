@@ -32,7 +32,7 @@ const timeRemaining = computed(() => april24th.value - now);
     <div class="container mx-auto">
       <div class="relative text-center mx-4">
         <span class="text-white font-medium bg-blue-800 py-[5px] px-4 rounded-md">
-          23 <sup>rd</sup> - 24 <sup>th</sup> JUly 2024
+          23 <sup>rd</sup> - 24 <sup>th</sup> July 2024
         </span>
         <h1 class="lg:text-6xl text-xl font-extrabold text-white my-4">
           25<sup>th</sup> Anniversary of TPSF <br />A legacy of championing private sector Growth Towards Vision 2050
@@ -164,7 +164,7 @@ const timeRemaining = computed(() => april24th.value - now);
 
                 </div>
                 <div class="">
-                  <h6 class="text-l font-bold mb-1">Date : 24<sup>Th</sup>JUly 2024 <br>Program : Annual General Meeting
+                  <h6 class="text-l font-bold mb-1">Date : 24<sup>Th</sup>July 2024 <br>Program : Annual General Meeting
                   </h6>
                   <p class="text-base font-bold mb-1">(JNICC) Julius Nyerere International Convention Centre</p>
                 </div>

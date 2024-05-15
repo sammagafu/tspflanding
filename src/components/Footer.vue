@@ -12,7 +12,7 @@
 
     <div class="grid grid-cols-3 lg:grid-cols-4 grid-flow-rows gap-4">
       <img src="@/assets/img/sponsors/hmh.png" alt="hmh">
-      <img src="@/assets/img/sponsors/carmel.png" alt="camel oil">
+      <!-- <img src="@/assets/img/sponsors/carmel.png" alt="camel oil"> -->
       <img src="@/assets/img/sponsors/tma.png" alt="tma">
       <img src="@/assets/img/sponsors/norway.png" alt="norway">
       <img src="@/assets/img/sponsors/ireland.png" alt="irealand">
@@ -39,7 +39,7 @@
     </p>
 
     <div class="grid grid-cols-4 lg:grid-cols-4 grid-flow-rows gap-4">
-      <img src="@/assets/img/sponsors/elswedy.png" alt="hmh">
+      <!-- <img src="@/assets/img/sponsors/elswedy.png" alt="hmh"> -->
       <img src="@/assets/img/sponsors/ttc.png" alt="camel oil">
     </div>
     </div>
@@ -51,10 +51,24 @@
 
     <div class="grid grid-cols-6 lg:grid-cols-4 grid-flow-rows gap-4">
       <img src="@/assets/img/sponsors/nbc.png" alt="hmh">
-      <img src="@/assets/img/sponsors/nmb.png" alt="camel oil">
+      <!-- <img src="@/assets/img/sponsors/nmb.png" alt="camel oil">
       <img src="@/assets/img/sponsors/pepsi.png" alt="norway">
       <img src="@/assets/img/sponsors/tdv.png" alt="irealand">
-      <img src="@/assets/img/sponsors/advent.png" alt="fcdo">
+      <img src="@/assets/img/sponsors/advent.png" alt="fcdo"> -->
+    </div>
+    </div>
+
+    <div class="container lg:mx-auto px-4">
+    <p class="text-2xl font-bold text-black">
+      In-kind Support
+    </p>
+
+    <div class="grid grid-cols-6 lg:grid-cols-4 grid-flow-rows gap-4">
+      <img src="@/assets/img/sponsors/pepsi.png" alt="hmh">
+      <!-- <img src="@/assets/img/sponsors/nmb.png" alt="camel oil">
+      <img src="@/assets/img/sponsors/pepsi.png" alt="norway">
+      <img src="@/assets/img/sponsors/tdv.png" alt="irealand">
+      <img src="@/assets/img/sponsors/advent.png" alt="fcdo"> -->
     </div>
     </div>
 
