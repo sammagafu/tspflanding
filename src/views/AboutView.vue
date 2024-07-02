@@ -20,7 +20,7 @@
             <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
                 <div class="">
                     <h2 class="text-2xl py-6 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
-                        DAY 1 TUESDAY JULY 23RD, 2024 AT JNICC</h2>
+                        DAY 1 TUESDAY 23RD JULY, 2024 AT JNICC</h2>
                 </div>
                 <div class="-my-4 divide-y divide-gray-200 ">
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -32,10 +32,10 @@
                                 REGISTRATION, GUEST ARRIVAL & ENTERTAINMENT
                             </h3>
                             <p class="text-gray-900 dark:text-white text-sm">Julius Nyerere International Convention
-                                Centre Breakfast upon arrival- General Guests</p>
+                                Centre <br> Breakfast upon arrival - General Guests</p>
                             <hr>
-                            <p class="text-gray-900 dark:text-white text-sm">Ministerial Breakfast: Closed Session
-                                (Invited Guests Only)</p>
+                            <p class="text-gray-900 dark:text-white text-sm">Ministerial Breakfast: Closed Session-
+                                Invited Guests Only Hosted by TPSF CEO</p>
                         </div>
                     </div>
 
@@ -62,20 +62,26 @@
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             10:05-10:10
                         </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Opening Ceremony</h3>
+                        <div class="">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Opening Ceremony</h3>
+                            <p>Tanzania National Anthem EAC National Anthem </p>
+                        </div>
                     </div>
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             10:10-10:20</p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Welcome Remarks by TPSF CEO,
-                            Raphael Maganga.</h3>
+                        <div class="">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Welcome Remarks by TPSF CEO,
+                                Raphael Maganga.</h3>
+                            <p>CEO, Tanzania Private Sector Foundation</p>
+                        </div>
                     </div>
 
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             10:20-10:25 </p>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Video Documentary: TPSF Journey,
-                            Last 25 years.</h3>
+                            Last 25 years in 5-7 Minutes.</h3>
                     </div>
 
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -97,35 +103,55 @@
                         </p>
                         <div class="">
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                                PLENARY 1 DISCUSSION
+                                PLENARY DISCUSSION
                             </h3>
-                            <p class="text-gray-900 dark:text-white font-bold text-xl py-2">Theme 1: A Quarter Century
-                                of Private Sector Expansion: The movers and shaker of our transformational economy</p>
+                            <p class="text-gray-900 dark:text-white font-bold text-xl py-2">"25 Years of Private Sector
+                                Evolution: Past, Present, and Future" </p>
                             <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">
-                                The opening plenary promises to be an illuminating exploration of the instrumental
-                                forces that have propelled the private sector's growth over the past 25 years. In this
-                                dynamic session, accomplished industry leaders, economic experts, and influential
-                                figures gather to discuss the dynamic individuals and groundbreaking initiatives that
-                                have driven the private sector's remarkable evolution. The discussion explores deep into
-                                the strategic decisions, innovative practices, and bold entrepreneurship that have
-                                fostered economic progress and prosperity. By spotlighting the visionary individuals and
-                                innovative strategies that have forged a path of transformation, this conversation
-                                provides a unique perspective on the private sector's pivotal role in shaping Tanzania's
-                                economic landscape.</p>
+                            <p class="text-gray-900 dark:text-white text-baseline py-2">The opening plenary promises to
+                                be an illuminating exploration of the instrumental forces that have propelled the
+                                private sector's growth over the past 25 years. The panel will provide a comprehensive
+                                reflection on the transformative journey of Tanzania's private sector over the past 25
+                                years, offering insightful perspectives on its current state and visionary projections
+                                for the next quarter-century. Our distinguished panelists will share their experiences,
+                                challenges, and success stories, while exploring strategic interventions to propel
+                                Tanzania's private sector towards a prosperous future.</p>
+                            <hr>
+                            <p class="font-bold">Moderator: Paul Makanza - Board Chairman, Chairperson CTI </p>
+                            <p class="font-bold">Panelist</p>
+                            <ul class="list-disc">
+                                <li>Hon. Prof. Kitila Mkumbo - Minister of State in President’s Office, Planning and
+                                    Investment </li>
+                                <li>Rostam Aziz - Chairman, Taifa Group </li>
+                                <li>Sara Masasi - Chief Executive Officer, Geita Gold Refinery </li>
+                                <li>Wilbert Chambulo - Chairman, Tanzania Association of Tour Operators </li>
+                                <li>Salim Aziz Bakhresa, CEO, Bakhresa Food Products Limited </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             11:50-12:00</p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Remarks by TPSF Chairlady, Ms
-                            Angelina Ngalula</h3>
+                        <div class="">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white">TPSF CHAIRPERSON REMARKS <br>Ms.
+                                Angelina Ngalula</h3>
+                            <p class="font-sm italic">Chairperson, Tanzania Private Sector Foundation</p>
+                        </div>
                     </div>
 
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             12:00-12:10</p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Ministerial Remarks</h3>
+                        <div class="">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Ministerial Remarks</h3>
+                            <ul class="list-disc">
+                                <li>Hon. Dkt. Ashatu Kijaji- Minister for Industry and Trade</li>
+                                <li>Prof. Kitila Mkumbo- Minister of State in President’s Office, Planning and
+                                    Investment </li>
+                                <li>Hon. Jenista Mhagama-Minister of State in the Prime Minister's Office Policy,
+                                    Coordination and Parliamentary Affairs</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -134,12 +160,12 @@
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Speech by Guest of Honor, Hon.
                             Dr. Samia Suluhu Hassan, President of The United Republic Of Tanzania</h3>
                     </div>
-
+                    <!-- 
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             11:30-12:00</p>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Launch of the TPSF Report</h3>
-                    </div>
+                    </div> -->
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             12:40-12:45</p>
@@ -149,15 +175,18 @@
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             12:45-13:00</p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Guest of Honor Departure</h3>
+                        <div class=""><h3 class="text-lg font-semibold text-gray-900 dark:text-white">Guest of Honor Departure</h3>
+                        <ul class="list-disc">
+                            <li>Business Clinic: A chance for members to engage with representatives from key agencies such as TRA,TIC,FCC,TBS, TAX OMBUDSMAN. </li>
+                        </ul></div>
                     </div>
 
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            13:00-14:00</p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">LUNCH BREAK</h3>
+                            15:00-16:30</p>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Scheduled networking sessions 1:1</h3>
                     </div>
-
+                    <!-- 
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             14:00-15:00
@@ -183,131 +212,7 @@
                                 proposals for consideration in the development of the Tanzania Development vision 2050.
                             </p>
                         </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            13:00-14:00</p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">LUNCH BREAK</h3>
-                    </div>
-
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            15:00-16:00
-                        </p>
-                        <div class="">
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT
-                                SESSIONS</h3>
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 1: AGRICULTURE</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Private Sector
-                                Investments: Revolutionizing Tanzania's Agricultural Industry</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">This Plenary serves as a dynamic
-                                platform for dissecting the pivotal role that private sector investments play in
-                                catalyzing transformative change within the country's agricultural sector. This engaging
-                                session brings together prominent stakeholders, industry experts, agricultural
-                                innovators, and investors to engage in a profound dialogue on how private capital
-                                infusion has the potential to reshape and modernize Tanzania's agricultural landscape.
-                                Participants delve into a comprehensive exploration of attracting investments in the
-                                agriculture sector, food security, emerging trends, and innovative models driving
-                                increased productivity, sustainability, and efficiency in the sector. Through insightful
-                                exchanges and strategic insights, this discussion aims to highlight the collaborative
-                                efforts and investment opportunities that will not only elevate Tanzania's agricultural
-                                output but also address food security, promote rural development, and contribute to the
-                                overall economic prosperity of the nation.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            <!-- 16:00 -->
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT SESSIONS</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 2: SUSTAINABLE ENERGY</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Powering Tanzania’s
-                                future: Sustainable energy for progress and prosperity.</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">This session will encapsulate the
-                                comprehensive integration of sustainable energy solutions across Tanzania’s
-                                socio-economic landscape by exploring and discussing strategies, innovations, projects,
-                                and collaborative efforts that can drive the adoption of sustainable energy solutions.
-                                Through knowledge sharing, experience, and stakeholder engagement the session will
-                                highlight analytical strategies to cater the transition towards cleaner, more
-                                accessible, and economically viable energy sources. A comprehensive outlook on the role
-                                of sustainable energy solutions in promoting economic growth, environmental stewardship
-                                and improved quality of life while fostering dialogue among key stakeholders to create a
-                                roadmap for achieving a resilient and prosperous energy future.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            <!-- 16:00 -->
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT SESSIONS</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 3: THE CREATIVE ECONOMY</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Unleashing Tanzania's
-                                Creative Power: Nurturing Talent and Fostering Growth in the Creative Economy</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">In an era of rapid globalization, the
-                                creative economy has witnessed a surge in popularity and visibility for artists, online
-                                content creators, musicians, and filmmakers from our region. Nevertheless, statistical
-                                data reveals that the bulk of this expansion is concentrated in South Africa and West
-                                Africa, overshadowing the abundant talent within Tanzania. The growth of the creative
-                                economy is paramount as it offers a gateway to broader economic opportunities for our
-                                largely youthful demographic. This session aims to delve into the pivotal roles of
-                                policy frameworks, skills development, intellectual property rights, and market
-                                integration in propelling the growth of Tanzania's creative economy.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            <!-- 16:00 -->
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT SESSIONS</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 4: TRANSPORT AND LOGISTICS</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Unlocking Tanzania's Potential: Exploring the Opportunities of Tanzania's Transport Network in Regional Trade Facilitation</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">Tanzania is widely recognized as a pivotal entry point into the African logistics and supply chain landscape. Positioned strategically along the Indian Ocean, and boasting a robust network encompassing road, rail, air transport, and port facilities, This positions Tanzania as a focal point for regional trade. Recent years have seen substantial government investments aimed at modernizing Tanzania's transportation and logistics infrastructure, a concerted effort aimed at attracting greater foreign investment and fostering economic expansion. In addition, the private sector has worked to facilitate infrastructural growth e.g investment through PPPs, reducing port congestion through IPDs amongst others. This session looks at the dynamics confronting the logistics and supply chain domain in Tanzania. It scrutinized the challenges and opportunities inherent in the sector, emphasizing the nation's potential to evolve into a central logistics hub for the region.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            <!-- 16:00 -->
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT SESSIONS</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 5: MINING</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Value Creation in Mining: Strategies for Sustainable Growth</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">In today's dynamic global market, the mining industry faces the dual challenge of optimizing the use of resources all while navigating fluctuating commodity prices. As the private sector, we recognize the imperative to maximize the economic benefits derived from mining activities while ensuring sustainable development and long-term growth. This talk will delve into the concept of value addition in the mining sector, exploring innovative strategies and best practices for transforming raw materials into higher-value products. From technology, supply chain integration, market development initiatives, we will uncover the key drivers behind successful value addition. We will also unpack the impact of regulation such as the local content policy within mining space.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            <!-- 16:00 -->
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT SESSIONS</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 6: SPORTS</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Game Changers: Private Sector Strategies for Developing Tanzania's Sports Economy</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">These sessions explore the untapped opportunities within Tanzania's sports industry and how the private sector can contribute to its growth and development. The discussion will delve into various aspects of the sports value chain, including infrastructure development, talent identification and development, event management, merchandising, broadcasting, and sponsorship. We will explore investment opportunities as well as the role of partnerships between private and public sectors, capacity building, and technology in enhancing the sports ecosystem.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            1500- 1630</p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Scheduled networking sessions 1:1 <br>Day 1 -Wrap up</h3>
-                    </div>
-
+                    </div> -->
 
                 </div>
 
@@ -316,138 +221,7 @@
             <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
                 <div class="">
                     <h2 class="text-2xl py-6 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
-                        DAY 2 : WEDNESDAY, JULY 24TH, 2024 - JNICC</h2>
-                </div>
-                <div class="-my-4 divide-y divide-gray-200 ">
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            07:30-10:30
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            AGM
-                        </h3>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            10:30-11:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Member only Networking Session: Tea Break <br>Non TPSF Members arrive for the rest of the program
-                        </h3>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            11:00-12:00
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT SESSIONS</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">PLENARY : REGIONAL INTEGRATION</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Leveraging Regional Integration to Foster Private Sector Expansion in Tanzania.</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">It will be an enlightening exploration of how collaboration within the broader regional blocks can stimulate the growth of the private sector within Tanzania. Distinguished participants will gather to discuss the multifaceted dynamics of regional value chains and industrialization, examining the strategies through which businesses can reap the benefits of engaging in cross-border business. The session will critically analyze the advantages and disadvantages of streamlining trade barriers and customs procedures among regional partners, shedding light on the potential impact on trade facilitation. Moreover, this discourse will illuminate the ways in which regional integration can significantly broaden the horizons of market opportunities for businesses, propelling them into new realms of growth. Integral to the conversation is the exploration of the Africa Continental Free Trade Area (AfCTA) and how regional infrastructure development plays a pivotal role in underpinning private sector expansion.</p>
-                        </div>
-                    </div> 
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            12:00-13:00
-                        </p>
-                        <div class="">
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">THEMATIC BREAKOUT SESSIONS- PT 1</h3>
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 1: SUSTAINABILITY</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Climate Change and Sustainable Development and the Role of private sector</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">Participants, including sustainability experts, corporate leaders, environmental advocates, and policymakers, will convene to scrutinize the urgent interplay between climate change and sustainable development, specifically within the context of the private sector's involvement. Against the backdrop of mounting climate challenges, this dynamic session will delve into the integral role that businesses play in shaping a sustainable future. By examining successful initiatives, innovative strategies, and collaborative approaches, the discussion aims to showcase how private sector entities can align profit with purpose by championing eco-friendly practices, reducing carbon footprints, climate financing and promoting green technologies.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            12:00-13:00
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">THEMATIC BREAKOUT SESSIONS- PT 1</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 2: FUTURE OF FUNDING</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Exploring alternative business and investment financing models.</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">Over the past two decades, traditional funding avenues have evolved significantly due to technological advancements and regulatory changes. This talk explores novel financing options available to private sector businesses. From corporate venturing, angel investing, crowdfunding, alternative financing models; entrepreneurs now have diverse funding opportunities beyond traditional sources. Understanding these new frontiers enables businesses to secure resources, fuel expansion, and adapt to the evolving financial landscape effectively. Join us to explore emerging trends in capital access, shaping the future of business growth and entrepreneurship.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            12:00-13:00
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">THEMATIC BREAKOUT SESSIONS- PT 1</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 3: HUMAN CAPITAL</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Future-Proofing Tanzania's Workforce: Strategies for Thriving in the Evolving World of Work</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">The landscape of work is undergoing rapid and transformative changes globally. From automation and artificial intelligence to remote work, the future of work is characterized by unprecedented shifts in employment patterns, skill requirements, and workplace dynamics. For emerging economies like Tanzania, embracing these changes is not only essential for economic competitiveness but also for ensuring inclusive growth and sustainable development. We explore proactive strategies that Tanzania should explore to remain competitive such as investing in skills development, fostering innovation and entrepreneurship, and creating supportive policy frameworks. Join us as we delve into the opportunities and challenges facing Tanzania's workforce in the new economy.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            13:00-14:00
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">LUNCH & NETWORKING
-                        </h3>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            14:00-15:00
-                        </p>
-                        <div class="">
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT SESSIONS PT 2</h3>
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 1: NON-TRADITIONAL (INNOVATIVE) BUSINESS MODELS</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Beyond Tradition: Shaping Tanzania's Private Sector growth with Innovative Business Models</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">An insightful discussion around franchising, a business model currently gaining momentum in Tanzania. Franchising offers a unique opportunity for entrepreneurs to expand their businesses while mitigating risks. This session aims to raise awareness among the business community about the potential of franchising and its role in driving economic growth in Tanzania.
-This session will provide a platform for franchising experts to explore the current landscape of franchising in Tanzania by identifying challenges and opportunities by delving into the discussion around strategies for promoting franchising as a viable business model and fostering its growth in Tanzania, this session will also feature experience sharing from some of the successful franchising in the country.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            14:00-15:00
-                        </p>
-                        <div class="">
-                            <!-- <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SECTOR SPECIFIC BREAKOUT SESSIONS PT 2</h3> -->
-                            <p class="text-gray-900 dark:text-white text-baseline">OPTION 2: DIGITAL TRANSFORMATION</p>
-                            <hr>
-                            <p class="text-gray-900 dark:text-white text-baseline py-2">Theme: Exploring the Digital Landscape of Tanzania: Prospects and Obstacles in the Digital Economy</p>
-                            <p class="text-gray-900 dark:text-white text-baseline">The digital economy presents both promise and complexity for Tanzania. This topic explores the country's journey into the digital age, examining the opportunities for economic growth, innovation, and inclusion, as well as the challenges of digital infrastructure, access, and cybersecurity. Through a holistic analysis of the digital ecosystem, attendees will gain an enhanced understanding of how harnessing digital potential can lead Tanzania toward a more equitable, prosperous, and forward-looking future.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            15:00-1600
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white"><ul class="text-baseline text-sm list-disc">
-                                <li>Day 2 Scheduled Networking Sessions</li>
-                                <li>Closed Dialog Session: Business Clinic (Invited Guests only)</li>
-                            </ul>
-                        </h3>
-                    </div>
-                    <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-                        <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                            1600
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Wrap up</h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
-                <div class="">
-                    <h2 class="text-2xl py-6 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
-                        DAY 2: TPSF GALA DINNER</h2>
+                        TPSF GALA DINNER</h2>
                 </div>
                 <div class="-my-4 divide-y divide-gray-200 ">
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -456,21 +230,21 @@ This session will provide a platform for franchising experts to explore the curr
                         </p>
                         <div class="">
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Arrival of Guests
-Vice President of the United Republic of Tanzania Hon.Philip Mpango
-                        </h3>
-                        <hr>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Arrival of Ministers, High Commissioners, Ambassadors
-                        </h3>
-                        <hr>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Arrival of Guest of Honor, heads to briefing room
-                        </h3>
-                        <hr>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Briefing of GoH of the event
-                        </h3>
+                                Arrival of Guests
+                                Vice President of the United Republic of Tanzania Hon.Philip Mpango
+                            </h3>
+                            <hr>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Arrival of Ministers, High Commissioners, Ambassadors
+                            </h3>
+                            <hr>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Arrival of Guest of Honor, heads to briefing room
+                            </h3>
+                            <hr>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Briefing of GoH of the event
+                            </h3>
                         </div>
                     </div>
 
@@ -488,7 +262,8 @@ Vice President of the United Republic of Tanzania Hon.Philip Mpango
                             1900-1910
                         </p>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Welcoming Announcement by the Master of Ceremony
+                            Welcoming Announcement by the Master of Ceremony <br>
+                            <span class="italic text-md">Taji Liundi</span>
                         </h3>
                     </div>
 
@@ -506,7 +281,7 @@ Vice President of the United Republic of Tanzania Hon.Philip Mpango
                             1945-2000
                         </p>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Welcome Remarks and Introductions by TPSF CEO, Raphael Maganga
+                            Welcome Remarks and Introductions by TPSF CEO
                         </h3>
                     </div>
 
@@ -541,9 +316,15 @@ Vice President of the United Republic of Tanzania Hon.Philip Mpango
                         <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             2030-2100
                         </p>
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Keynote: Invited Guest
-                        </h3>
+                        <div class="">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Keynote Invited Guest: Top Businessman from Africa Suggestions:
+                            </h3>
+                            <ul class="list-disc">
+                                <li>Strive Masiyiwa- Liquid, Netflix</li>
+                                <li>Vimal Shah- CEO Bidco</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -560,7 +341,8 @@ Vice President of the United Republic of Tanzania Hon.Philip Mpango
                             2115-2125
                         </p>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            Ministerial remarks
+                            Remarks from Minister Hon. Dr. Ashatu Kijaji <br>
+                            <span class="italic text-md">Minister of Trade and Industries </span>
                         </h3>
                     </div>
 
@@ -570,8 +352,8 @@ Vice President of the United Republic of Tanzania Hon.Philip Mpango
                         </p>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                             Speech by Guest of Honor
-H.E Dr. Philip Isdor Mpango
-Vice President of United Republic of Tanzania
+                            H.E Dr. Philip Isdor Mpango
+                            Vice President of United Republic of Tanzania
                         </h3>
                     </div>
 
@@ -597,6 +379,8 @@ Vice President of United Republic of Tanzania
                         </p>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                             Group Photo <br>Closing Entertainment
+                            <br>
+                            Closing Entertainment
                         </h3>
                     </div>
 

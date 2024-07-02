@@ -29,6 +29,9 @@
 
     <div class="grid grid-cols-4 lg:grid-cols-4 grid-flow-rows gap-4">
       <img src="@/assets/img/sponsors/africab.png" alt="hmh">
+      <img src="@/assets/img/sponsors/bravo.png" alt="bravo">
+      <img src="@/assets/img/sponsors/agricom.png" alt="agricom">
+      <img src="@/assets/img/sponsors/sas.png" alt="SAS">
     </div>
     </div>
   </div>
@@ -51,11 +54,12 @@
     </p>
 
     <div class="grid grid-cols-6 lg:grid-cols-4 grid-flow-rows gap-4">
-      <img src="@/assets/img/sponsors/nbc.png" alt="hmh">
-      <img src="@/assets/img/sponsors/pepsi.png" alt="hmh">
-      <img src="@/assets/img/sponsors/advent.png" alt="fcdo">
+      <img src="@/assets/img/sponsors/nbc.png" alt="nbc">
+      <img src="@/assets/img/sponsors/pepsi.png" alt="pespi">
+      <img src="@/assets/img/sponsors/advent.png" alt="advent">
+      <img src="@/assets/img/sponsors/nmb.png" alt="nmb">
 
-      <!-- <img src="@/assets/img/sponsors/nmb.png" alt="camel oil">
+      <!-- 
       <img src="@/assets/img/sponsors/pepsi.png" alt="norway">
       <img src="@/assets/img/sponsors/tdv.png" alt="irealand">
       -->
