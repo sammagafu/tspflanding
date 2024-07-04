@@ -11,7 +11,7 @@ import 'swiper/css';
 import { ref, computed } from "vue";
 const modules = [Navigation,Autoplay];
 const now = new Date();
-const april24th = ref(new Date(now.getFullYear(), 6, 25)); // Month in JavaScript Date starts from 0 (0-January, 1-February, ...)
+const april24th = ref(new Date(now.getFullYear(), 6, 23)); // Month in JavaScript Date starts from 0 (0-January, 1-February, ...)
 
 if (now > april24th.value) { // If April 24th has already passed this year, calculate for next year
   april24th.value.setFullYear(april24th.value.getFullYear() + 1);
@@ -32,7 +32,7 @@ const timeRemaining = computed(() => april24th.value - now);
     <div class="container mx-auto">
       <div class="relative text-center mx-4">
         <span class="text-white font-medium bg-blue-800 py-[5px] px-4 rounded-md">
-          25 <sup>th</sup> July 2024
+          23 <sup>rd</sup> July 2024
         </span>
         <h1 class="lg:text-6xl text-xl font-extrabold text-white my-4">
           25<sup>th</sup> Anniversary of TPSF <br />A legacy of championing private sector Growth Towards Vision 2050
@@ -154,7 +154,7 @@ const timeRemaining = computed(() => april24th.value - now);
               <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 my-12">
                 <div class="">
 
-                  <h6 class="text-l font-bold mb-1"> Date : 25<sup>th</sup> July 2024<br>Program :
+                  <h6 class="text-l font-bold mb-1"> Date : 23<sup>rd</sup> July 2024<br>Program :
                     Conference</h6>
                   <p class="text-base font-bold mb-1">
                     Venue : (JNICC) Julius Nyerere International Convention Centre
@@ -163,7 +163,7 @@ const timeRemaining = computed(() => april24th.value - now);
                 </div>
 
                 <div class="">
-                  <h6 class="text-l font-bold mb-1">Date : 25<sup>Th</sup>July 2024 <br>Program : Gala Dinner
+                  <h6 class="text-l font-bold mb-1">Date : 23<sup>rd</sup>July 2024 <br>Program : Gala Dinner
                   </h6>
                   <p class="text-l font-bold mb-1">Venue : The Super Dome</p>
                 </div>
